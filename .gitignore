@@ -1,0 +1,7 @@
+## Visual Estudio code
+*.code-workspace
+.vscode
+
+node_modules
+
+/js

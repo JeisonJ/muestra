@@ -1,0 +1,3465 @@
+/*! Spectre.css v0.5.7 | MIT License | github.com/picturepan2/spectre */
+/* Manually forked from Normalize.css */
+/* normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Correct the line height in all browsers.
+ * 3. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+/* Document
+   ========================================================================== */
+/* line 14, node_modules/spectre.css/src/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 3 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+/* line 27, node_modules/spectre.css/src/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 35, node_modules/spectre.css/src/_normalize.scss */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+/* line 49, node_modules/spectre.css/src/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+/* line 62, node_modules/spectre.css/src/_normalize.scss */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/**
+ * Add the correct margin in IE 8 (removed).
+ */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+/* line 77, node_modules/spectre.css/src/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers. (removed)
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+/* line 96, node_modules/spectre.css/src/_normalize.scss */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+/* line 106, node_modules/spectre.css/src/_normalize.scss */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/**
+ * Modify default styling of address.
+ */
+/* line 115, node_modules/spectre.css/src/_normalize.scss */
+address {
+  font-style: normal;
+}
+
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari. (removed)
+ */
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+/* line 128, node_modules/spectre.css/src/_normalize.scss */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/* line 137, node_modules/spectre.css/src/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+/* line 147, node_modules/spectre.css/src/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
+  /* 1 (changed) */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+/* line 159, node_modules/spectre.css/src/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-. (Removed)
+ */
+/**
+ * Add the correct font size in all browsers.
+ */
+/* line 171, node_modules/spectre.css/src/_normalize.scss */
+small {
+  font-size: 80%;
+  font-weight: 400;
+  /* (added) */
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+/* line 181, node_modules/spectre.css/src/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 189, node_modules/spectre.css/src/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 193, node_modules/spectre.css/src/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 204, node_modules/spectre.css/src/_normalize.scss */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+/* line 213, node_modules/spectre.css/src/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+/* line 222, node_modules/spectre.css/src/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+/* line 230, node_modules/spectre.css/src/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+/* line 242, node_modules/spectre.css/src/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 (changed) */
+  font-size: inherit;
+  /* 1 (changed) */
+  line-height: inherit;
+  /* 1 (changed) */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+/* line 258, node_modules/spectre.css/src/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+/* line 268, node_modules/spectre.css/src/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+/* line 279, node_modules/spectre.css/src/_normalize.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+/* line 290, node_modules/spectre.css/src/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule (removed).
+ */
+/**
+ * Change the border, margin, and padding in all browsers (opinionated) (changed).
+ */
+/* line 307, node_modules/spectre.css/src/_normalize.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+/* line 320, node_modules/spectre.css/src/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+/* line 334, node_modules/spectre.css/src/_normalize.scss */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+/* line 343, node_modules/spectre.css/src/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+/* line 352, node_modules/spectre.css/src/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/* line 362, node_modules/spectre.css/src/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+/* line 372, node_modules/spectre.css/src/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+/* line 381, node_modules/spectre.css/src/_normalize.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+/* line 391, node_modules/spectre.css/src/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+/* line 404, node_modules/spectre.css/src/_normalize.scss */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+/* line 413, node_modules/spectre.css/src/_normalize.scss */
+summary {
+  display: list-item;
+  outline: none;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+/* line 425, node_modules/spectre.css/src/_normalize.scss */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+/* line 433, node_modules/spectre.css/src/_normalize.scss */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+/* line 444, node_modules/spectre.css/src/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* line 2, node_modules/spectre.css/src/_base.scss */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* line 8, node_modules/spectre.css/src/_base.scss */
+html {
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 15, node_modules/spectre.css/src/_base.scss */
+body {
+  background: #fff;
+  color: #3b4351;
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif, "Helvetica Neue", sans-serif;
+  font-size: 0.8rem;
+  overflow-x: hidden;
+  text-rendering: optimizeLegibility;
+}
+
+/* line 24, node_modules/spectre.css/src/_base.scss */
+a {
+  color: #5755d9;
+  outline: none;
+  text-decoration: none;
+}
+
+/* line 29, node_modules/spectre.css/src/_base.scss */
+a:focus {
+  box-shadow: 0 0 0 0.1rem rgba(87, 85, 217, 0.2);
+}
+
+/* line 33, node_modules/spectre.css/src/_base.scss */
+a:focus, a:hover, a:active, a.active {
+  color: #302ecd;
+  text-decoration: underline;
+}
+
+/* line 41, node_modules/spectre.css/src/_base.scss */
+a:visited {
+  color: #807fe2;
+}
+
+/* line 2, node_modules/spectre.css/src/_buttons.scss */
+.btn {
+  appearance: none;
+  background: #fff;
+  border: 0.05rem solid #5755d9;
+  border-radius: 0.1rem;
+  color: #5755d9;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8rem;
+  height: 1.8rem;
+  line-height: 1.2rem;
+  outline: none;
+  padding: 0.25rem 0.4rem;
+  text-align: center;
+  text-decoration: none;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* line 21, node_modules/spectre.css/src/_buttons.scss */
+.btn:focus {
+  box-shadow: 0 0 0 0.1rem rgba(87, 85, 217, 0.2);
+}
+
+/* line 24, node_modules/spectre.css/src/_buttons.scss */
+.btn:focus, .btn:hover {
+  background: #f1f1fc;
+  border-color: #4b48d6;
+  text-decoration: none;
+}
+
+/* line 30, node_modules/spectre.css/src/_buttons.scss */
+.btn:active, .btn.active {
+  background: #4b48d6;
+  border-color: #3634d2;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* line 37, node_modules/spectre.css/src/_buttons.scss */
+.btn:active.loading::after, .btn.active.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
+/* line 43, node_modules/spectre.css/src/_buttons.scss */
+.btn[disabled], .btn:disabled, .btn.disabled {
+  cursor: default;
+  opacity: .5;
+  pointer-events: none;
+}
+
+/* line 52, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-primary {
+  background: #5755d9;
+  border-color: #4b48d6;
+  color: #fff;
+}
+
+/* line 56, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-primary:focus, .btn.btn-primary:hover {
+  background: #4240d4;
+  border-color: #3634d2;
+  color: #fff;
+}
+
+/* line 62, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-primary:active, .btn.btn-primary.active {
+  background: #3a38d2;
+  border-color: #302ecd;
+  color: #fff;
+}
+
+/* line 69, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-primary.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
+/* line 77, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-success {
+  background: #32b643;
+  border-color: #2faa3f;
+  color: #fff;
+}
+
+/* line 6, node_modules/spectre.css/src/mixins/_button.scss */
+.btn.btn-success:focus {
+  box-shadow: 0 0 0 0.1rem rgba(50, 182, 67, 0.2);
+}
+
+/* line 9, node_modules/spectre.css/src/mixins/_button.scss */
+.btn.btn-success:focus, .btn.btn-success:hover {
+  background: #30ae40;
+  border-color: #2da23c;
+  color: #fff;
+}
+
+/* line 15, node_modules/spectre.css/src/mixins/_button.scss */
+.btn.btn-success:active, .btn.btn-success.active {
+  background: #2a9a39;
+  border-color: #278e34;
+  color: #fff;
+}
+
+/* line 22, node_modules/spectre.css/src/mixins/_button.scss */
+.btn.btn-success.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
+/* line 81, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-error {
+  background: #e85600;
+  border-color: #d95000;
+  color: #fff;
+}
+
+/* line 6, node_modules/spectre.css/src/mixins/_button.scss */
+.btn.btn-error:focus {
+  box-shadow: 0 0 0 0.1rem rgba(232, 86, 0, 0.2);
+}
+
+/* line 9, node_modules/spectre.css/src/mixins/_button.scss */
+.btn.btn-error:focus, .btn.btn-error:hover {
+  background: #de5200;
+  border-color: #cf4d00;
+  color: #fff;
+}
+
+/* line 15, node_modules/spectre.css/src/mixins/_button.scss */
+.btn.btn-error:active, .btn.btn-error.active {
+  background: #c44900;
+  border-color: #b54300;
+  color: #fff;
+}
+
+/* line 22, node_modules/spectre.css/src/mixins/_button.scss */
+.btn.btn-error.loading::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+}
+
+/* line 86, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-link {
+  background: transparent;
+  border-color: transparent;
+  color: #5755d9;
+}
+
+/* line 90, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-link:focus, .btn.btn-link:hover, .btn.btn-link:active, .btn.btn-link.active {
+  color: #302ecd;
+}
+
+/* line 99, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-sm {
+  font-size: 0.7rem;
+  height: 1.4rem;
+  padding: 0.05rem 0.3rem;
+}
+
+/* line 105, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-lg {
+  font-size: 0.9rem;
+  height: 2rem;
+  padding: 0.35rem 0.6rem;
+}
+
+/* line 112, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-block {
+  display: block;
+  width: 100%;
+}
+
+/* line 118, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-action {
+  width: 1.8rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 123, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-action.btn-sm {
+  width: 1.4rem;
+}
+
+/* line 127, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-action.btn-lg {
+  width: 2rem;
+}
+
+/* line 133, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-clear {
+  background: transparent;
+  border: 0;
+  color: currentColor;
+  height: 1rem;
+  line-height: 0.8rem;
+  margin-left: 0.2rem;
+  margin-right: -2px;
+  opacity: 1;
+  padding: 0.1rem;
+  text-decoration: none;
+  width: 1rem;
+}
+
+/* line 146, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-clear:focus, .btn.btn-clear:hover {
+  background: rgba(247, 248, 249, 0.5);
+  opacity: .95;
+}
+
+/* line 152, node_modules/spectre.css/src/_buttons.scss */
+.btn.btn-clear::before {
+  content: "\2715";
+}
+
+/* line 159, node_modules/spectre.css/src/_buttons.scss */
+.btn-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+/* line 163, node_modules/spectre.css/src/_buttons.scss */
+.btn-group .btn {
+  flex: 1 0 auto;
+}
+
+/* line 165, node_modules/spectre.css/src/_buttons.scss */
+.btn-group .btn:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 169, node_modules/spectre.css/src/_buttons.scss */
+.btn-group .btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  margin-left: -0.05rem;
+}
+
+/* line 173, node_modules/spectre.css/src/_buttons.scss */
+.btn-group .btn:last-child:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: -0.05rem;
+}
+
+/* line 178, node_modules/spectre.css/src/_buttons.scss */
+.btn-group .btn:focus, .btn-group .btn:hover, .btn-group .btn:active, .btn-group .btn.active {
+  z-index: 1;
+}
+
+/* line 186, node_modules/spectre.css/src/_buttons.scss */
+.btn-group.btn-group-block {
+  display: flex;
+}
+
+/* line 189, node_modules/spectre.css/src/_buttons.scss */
+.btn-group.btn-group-block .btn {
+  flex: 1 0 0;
+}
+
+/* line 3, node_modules/spectre.css/src/_forms.scss */
+.form-group:not(:last-child) {
+  margin-bottom: 0.4rem;
+}
+
+/* line 8, node_modules/spectre.css/src/_forms.scss */
+fieldset {
+  margin-bottom: 0.8rem;
+}
+
+/* line 12, node_modules/spectre.css/src/_forms.scss */
+legend {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+}
+
+/* line 19, node_modules/spectre.css/src/_forms.scss */
+.form-label {
+  display: block;
+  line-height: 1.2rem;
+  padding: 0.3rem 0;
+}
+
+/* line 24, node_modules/spectre.css/src/_forms.scss */
+.form-label.label-sm {
+  font-size: 0.7rem;
+  padding: 0.1rem 0;
+}
+
+/* line 29, node_modules/spectre.css/src/_forms.scss */
+.form-label.label-lg {
+  font-size: 0.9rem;
+  padding: 0.4rem 0;
+}
+
+/* line 36, node_modules/spectre.css/src/_forms.scss */
+.form-input {
+  appearance: none;
+  background: #fff;
+  background-image: none;
+  border: 0.05rem solid #bcc3ce;
+  border-radius: 0.1rem;
+  color: #3b4351;
+  display: block;
+  font-size: 0.8rem;
+  height: 1.8rem;
+  line-height: 1.2rem;
+  max-width: 100%;
+  outline: none;
+  padding: 0.25rem 0.4rem;
+  position: relative;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
+  width: 100%;
+}
+
+/* line 53, node_modules/spectre.css/src/_forms.scss */
+.form-input:focus {
+  box-shadow: 0 0 0 0.1rem rgba(87, 85, 217, 0.2);
+  border-color: #5755d9;
+}
+
+/* line 57, node_modules/spectre.css/src/_forms.scss */
+.form-input::placeholder {
+  color: #bcc3ce;
+}
+
+/* line 62, node_modules/spectre.css/src/_forms.scss */
+.form-input.input-sm {
+  font-size: 0.7rem;
+  height: 1.4rem;
+  padding: 0.05rem 0.3rem;
+}
+
+/* line 68, node_modules/spectre.css/src/_forms.scss */
+.form-input.input-lg {
+  font-size: 0.9rem;
+  height: 2rem;
+  padding: 0.35rem 0.6rem;
+}
+
+/* line 74, node_modules/spectre.css/src/_forms.scss */
+.form-input.input-inline {
+  display: inline-block;
+  vertical-align: middle;
+  width: auto;
+}
+
+/* line 81, node_modules/spectre.css/src/_forms.scss */
+.form-input[type="file"] {
+  height: auto;
+}
+
+/* line 88, node_modules/spectre.css/src/_forms.scss */
+textarea.form-input, textarea.form-input.input-lg, textarea.form-input.input-sm {
+  height: auto;
+}
+
+/* line 96, node_modules/spectre.css/src/_forms.scss */
+.form-input-hint {
+  color: #bcc3ce;
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+/* line 101, node_modules/spectre.css/src/_forms.scss */
+.has-success .form-input-hint,
+.is-success + .form-input-hint {
+  color: #32b643;
+}
+
+/* line 106, node_modules/spectre.css/src/_forms.scss */
+.has-error .form-input-hint,
+.is-error + .form-input-hint {
+  color: #e85600;
+}
+
+/* line 113, node_modules/spectre.css/src/_forms.scss */
+.form-select {
+  appearance: none;
+  border: 0.05rem solid #bcc3ce;
+  border-radius: 0.1rem;
+  color: inherit;
+  font-size: 0.8rem;
+  height: 1.8rem;
+  line-height: 1.2rem;
+  outline: none;
+  padding: 0.25rem 0.4rem;
+  vertical-align: middle;
+  width: 100%;
+  background: #fff;
+}
+
+/* line 126, node_modules/spectre.css/src/_forms.scss */
+.form-select:focus {
+  box-shadow: 0 0 0 0.1rem rgba(87, 85, 217, 0.2);
+  border-color: #5755d9;
+}
+
+/* line 130, node_modules/spectre.css/src/_forms.scss */
+.form-select::-ms-expand {
+  display: none;
+}
+
+/* line 135, node_modules/spectre.css/src/_forms.scss */
+.form-select.select-sm {
+  font-size: 0.7rem;
+  height: 1.4rem;
+  padding: 0.05rem 1.1rem 0.05rem 0.3rem;
+}
+
+/* line 141, node_modules/spectre.css/src/_forms.scss */
+.form-select.select-lg {
+  font-size: 0.9rem;
+  height: 2rem;
+  padding: 0.35rem 1.4rem 0.35rem 0.6rem;
+}
+
+/* line 148, node_modules/spectre.css/src/_forms.scss */
+.form-select[size], .form-select[multiple] {
+  height: auto;
+  padding: 0.25rem 0.4rem;
+}
+
+/* line 153, node_modules/spectre.css/src/_forms.scss */
+.form-select[size] option, .form-select[multiple] option {
+  padding: 0.1rem 0.2rem;
+}
+
+/* line 157, node_modules/spectre.css/src/_forms.scss */
+.form-select:not([multiple]):not([size]) {
+  background: #fff url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%204%205'%3E%3Cpath%20fill='%23667189'%20d='M2%200L0%202h4zm0%205L0%203h4z'/%3E%3C/svg%3E") no-repeat right 0.35rem center/0.4rem 0.5rem;
+  padding-right: 1.2rem;
+}
+
+/* line 164, node_modules/spectre.css/src/_forms.scss */
+.has-icon-left,
+.has-icon-right {
+  position: relative;
+}
+
+/* line 168, node_modules/spectre.css/src/_forms.scss */
+.has-icon-left .form-icon,
+.has-icon-right .form-icon {
+  height: 0.8rem;
+  margin: 0 0.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 0.8rem;
+  z-index: 2;
+}
+
+/* line 180, node_modules/spectre.css/src/_forms.scss */
+.has-icon-left .form-icon {
+  left: 0.05rem;
+}
+
+/* line 184, node_modules/spectre.css/src/_forms.scss */
+.has-icon-left .form-input {
+  padding-left: 1.3rem;
+}
+
+/* line 190, node_modules/spectre.css/src/_forms.scss */
+.has-icon-right .form-icon {
+  right: 0.05rem;
+}
+
+/* line 194, node_modules/spectre.css/src/_forms.scss */
+.has-icon-right .form-input {
+  padding-right: 1.3rem;
+}
+
+/* line 200, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox,
+.form-radio,
+.form-switch {
+  display: block;
+  line-height: 1.2rem;
+  margin: 0.2rem 0;
+  min-height: 1.2rem;
+  padding: 0.1rem 0.4rem 0.1rem 1.2rem;
+  position: relative;
+}
+
+/* line 210, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox input,
+.form-radio input,
+.form-switch input {
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 217, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox input:focus + .form-icon,
+.form-radio input:focus + .form-icon,
+.form-switch input:focus + .form-icon {
+  box-shadow: 0 0 0 0.1rem rgba(87, 85, 217, 0.2);
+  border-color: #5755d9;
+}
+
+/* line 221, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox input:checked + .form-icon,
+.form-radio input:checked + .form-icon,
+.form-switch input:checked + .form-icon {
+  background: #5755d9;
+  border-color: #5755d9;
+}
+
+/* line 227, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox .form-icon,
+.form-radio .form-icon,
+.form-switch .form-icon {
+  border: 0.05rem solid #bcc3ce;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s;
+}
+
+/* line 236, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox.input-sm,
+.form-radio.input-sm,
+.form-switch.input-sm {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+/* line 241, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox.input-lg,
+.form-radio.input-lg,
+.form-switch.input-lg {
+  font-size: 0.9rem;
+  margin: 0.3rem 0;
+}
+
+/* line 249, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox .form-icon,
+.form-radio .form-icon {
+  background: #fff;
+  height: 0.8rem;
+  left: 0;
+  top: 0.3rem;
+  width: 0.8rem;
+}
+
+/* line 258, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox input:active + .form-icon,
+.form-radio input:active + .form-icon {
+  background: #eef0f3;
+}
+
+/* line 264, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox .form-icon {
+  border-radius: 0.1rem;
+}
+
+/* line 270, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox input:checked + .form-icon::before {
+  background-clip: padding-box;
+  border: 0.1rem solid #fff;
+  border-left-width: 0;
+  border-top-width: 0;
+  content: "";
+  height: 9px;
+  left: 50%;
+  margin-left: -3px;
+  margin-top: -6px;
+  position: absolute;
+  top: 50%;
+  transform: rotate(45deg);
+  width: 6px;
+}
+
+/* line 286, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox input:indeterminate + .form-icon {
+  background: #5755d9;
+  border-color: #5755d9;
+}
+
+/* line 289, node_modules/spectre.css/src/_forms.scss */
+.form-checkbox input:indeterminate + .form-icon::before {
+  background: #fff;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -1px;
+  position: absolute;
+  top: 50%;
+  width: 10px;
+}
+
+/* line 304, node_modules/spectre.css/src/_forms.scss */
+.form-radio .form-icon {
+  border-radius: 50%;
+}
+
+/* line 310, node_modules/spectre.css/src/_forms.scss */
+.form-radio input:checked + .form-icon::before {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  height: 6px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 6px;
+}
+
+/* line 326, node_modules/spectre.css/src/_forms.scss */
+.form-switch {
+  padding-left: 2rem;
+}
+
+/* line 329, node_modules/spectre.css/src/_forms.scss */
+.form-switch .form-icon {
+  background: #bcc3ce;
+  background-clip: padding-box;
+  border-radius: 0.45rem;
+  height: 0.9rem;
+  left: 0;
+  top: 0.25rem;
+  width: 1.6rem;
+}
+
+/* line 337, node_modules/spectre.css/src/_forms.scss */
+.form-switch .form-icon::before {
+  background: #fff;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 0.8rem;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: background .2s, border .2s, box-shadow .2s, color .2s, left .2s;
+  width: 0.8rem;
+}
+
+/* line 353, node_modules/spectre.css/src/_forms.scss */
+.form-switch input:checked + .form-icon::before {
+  left: 14px;
+}
+
+/* line 358, node_modules/spectre.css/src/_forms.scss */
+.form-switch input:active + .form-icon::before {
+  background: #f7f8f9;
+}
+
+/* line 366, node_modules/spectre.css/src/_forms.scss */
+.input-group {
+  display: flex;
+}
+
+/* line 369, node_modules/spectre.css/src/_forms.scss */
+.input-group .input-group-addon {
+  background: #f7f8f9;
+  border: 0.05rem solid #bcc3ce;
+  border-radius: 0.1rem;
+  line-height: 1.2rem;
+  padding: 0.25rem 0.4rem;
+  white-space: nowrap;
+}
+
+/* line 377, node_modules/spectre.css/src/_forms.scss */
+.input-group .input-group-addon.addon-sm {
+  font-size: 0.7rem;
+  padding: 0.05rem 0.3rem;
+}
+
+/* line 382, node_modules/spectre.css/src/_forms.scss */
+.input-group .input-group-addon.addon-lg {
+  font-size: 0.9rem;
+  padding: 0.35rem 0.6rem;
+}
+
+/* line 388, node_modules/spectre.css/src/_forms.scss */
+.input-group .form-input,
+.input-group .form-select {
+  flex: 1 1 auto;
+  width: 1%;
+}
+
+/* line 394, node_modules/spectre.css/src/_forms.scss */
+.input-group .input-group-btn {
+  z-index: 1;
+}
+
+/* line 402, node_modules/spectre.css/src/_forms.scss */
+.input-group .form-input:first-child:not(:last-child),
+.input-group .form-select:first-child:not(:last-child),
+.input-group .input-group-addon:first-child:not(:last-child),
+.input-group .input-group-btn:first-child:not(:last-child) {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+
+/* line 406, node_modules/spectre.css/src/_forms.scss */
+.input-group .form-input:not(:first-child):not(:last-child),
+.input-group .form-select:not(:first-child):not(:last-child),
+.input-group .input-group-addon:not(:first-child):not(:last-child),
+.input-group .input-group-btn:not(:first-child):not(:last-child) {
+  border-radius: 0;
+  margin-left: -0.05rem;
+}
+
+/* line 410, node_modules/spectre.css/src/_forms.scss */
+.input-group .form-input:last-child:not(:first-child),
+.input-group .form-select:last-child:not(:first-child),
+.input-group .input-group-addon:last-child:not(:first-child),
+.input-group .input-group-btn:last-child:not(:first-child) {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  margin-left: -0.05rem;
+}
+
+/* line 415, node_modules/spectre.css/src/_forms.scss */
+.input-group .form-input:focus,
+.input-group .form-select:focus,
+.input-group .input-group-addon:focus,
+.input-group .input-group-btn:focus {
+  z-index: 2;
+}
+
+/* line 420, node_modules/spectre.css/src/_forms.scss */
+.input-group .form-select {
+  width: auto;
+}
+
+/* line 424, node_modules/spectre.css/src/_forms.scss */
+.input-group.input-inline {
+  display: inline-flex;
+}
+
+/* line 432, node_modules/spectre.css/src/_forms.scss */
+.has-success .form-input, .form-input.is-success, .has-success
+.form-select,
+.form-select.is-success {
+  background: #f9fdfa;
+  border-color: #32b643;
+}
+
+/* line 436, node_modules/spectre.css/src/_forms.scss */
+.has-success .form-input:focus, .form-input.is-success:focus, .has-success
+.form-select:focus,
+.form-select.is-success:focus {
+  box-shadow: 0 0 0 0.1rem rgba(50, 182, 67, 0.2);
+}
+
+/* line 441, node_modules/spectre.css/src/_forms.scss */
+.has-error .form-input, .form-input.is-error, .has-error
+.form-select,
+.form-select.is-error {
+  background: #fffaf7;
+  border-color: #e85600;
+}
+
+/* line 445, node_modules/spectre.css/src/_forms.scss */
+.has-error .form-input:focus, .form-input.is-error:focus, .has-error
+.form-select:focus,
+.form-select.is-error:focus {
+  box-shadow: 0 0 0 0.1rem rgba(232, 86, 0, 0.2);
+}
+
+/* line 456, node_modules/spectre.css/src/_forms.scss */
+.has-error .form-checkbox .form-icon, .form-checkbox.is-error .form-icon, .has-error
+.form-radio .form-icon,
+.form-radio.is-error .form-icon, .has-error
+.form-switch .form-icon,
+.form-switch.is-error .form-icon {
+  border-color: #e85600;
+}
+
+/* line 461, node_modules/spectre.css/src/_forms.scss */
+.has-error .form-checkbox input:checked + .form-icon, .form-checkbox.is-error input:checked + .form-icon, .has-error
+.form-radio input:checked + .form-icon,
+.form-radio.is-error input:checked + .form-icon, .has-error
+.form-switch input:checked + .form-icon,
+.form-switch.is-error input:checked + .form-icon {
+  background: #e85600;
+  border-color: #e85600;
+}
+
+/* line 466, node_modules/spectre.css/src/_forms.scss */
+.has-error .form-checkbox input:focus + .form-icon, .form-checkbox.is-error input:focus + .form-icon, .has-error
+.form-radio input:focus + .form-icon,
+.form-radio.is-error input:focus + .form-icon, .has-error
+.form-switch input:focus + .form-icon,
+.form-switch.is-error input:focus + .form-icon {
+  box-shadow: 0 0 0 0.1rem rgba(232, 86, 0, 0.2);
+  border-color: #e85600;
+}
+
+/* line 478, node_modules/spectre.css/src/_forms.scss */
+.has-error .form-checkbox input:indeterminate + .form-icon, .form-checkbox.is-error input:indeterminate + .form-icon {
+  background: #e85600;
+  border-color: #e85600;
+}
+
+/* line 489, node_modules/spectre.css/src/_forms.scss */
+.form-input:not(:placeholder-shown):invalid {
+  border-color: #e85600;
+}
+
+/* line 491, node_modules/spectre.css/src/_forms.scss */
+.form-input:not(:placeholder-shown):invalid:focus {
+  box-shadow: 0 0 0 0.1rem rgba(232, 86, 0, 0.2);
+  background: #fffaf7;
+}
+
+/* line 496, node_modules/spectre.css/src/_forms.scss */
+.form-input:not(:placeholder-shown):invalid + .form-input-hint {
+  color: #e85600;
+}
+
+/* line 506, node_modules/spectre.css/src/_forms.scss */
+.form-input:disabled, .form-input.disabled,
+.form-select:disabled,
+.form-select.disabled {
+  background-color: #eef0f3;
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+/* line 515, node_modules/spectre.css/src/_forms.scss */
+.form-input[readonly] {
+  background-color: #f7f8f9;
+}
+
+/* line 523, node_modules/spectre.css/src/_forms.scss */
+input:disabled + .form-icon, input.disabled + .form-icon {
+  background: #eef0f3;
+  cursor: not-allowed;
+  opacity: .5;
+}
+
+/* line 535, node_modules/spectre.css/src/_forms.scss */
+.form-switch input:disabled + .form-icon::before, .form-switch input.disabled + .form-icon::before {
+  background: #fff;
+}
+
+/* line 543, node_modules/spectre.css/src/_forms.scss */
+.form-horizontal {
+  padding: 0.4rem 0;
+}
+
+/* line 546, node_modules/spectre.css/src/_forms.scss */
+.form-horizontal .form-group {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 553, node_modules/spectre.css/src/_forms.scss */
+.form-inline {
+  display: inline-block;
+}
+
+/* line 2, node_modules/spectre.css/src/_layout.scss */
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  width: 100%;
+}
+
+/* line 11, node_modules/spectre.css/src/_layout.scss */
+.container.grid-xl {
+  max-width: 1296px;
+}
+
+/* line 15, node_modules/spectre.css/src/_layout.scss */
+.container.grid-lg {
+  max-width: 976px;
+}
+
+/* line 19, node_modules/spectre.css/src/_layout.scss */
+.container.grid-md {
+  max-width: 856px;
+}
+
+/* line 23, node_modules/spectre.css/src/_layout.scss */
+.container.grid-sm {
+  max-width: 616px;
+}
+
+/* line 27, node_modules/spectre.css/src/_layout.scss */
+.container.grid-xs {
+  max-width: 496px;
+}
+
+/* line 33, node_modules/spectre.css/src/_layout.scss */
+.show-xs,
+.show-sm,
+.show-md,
+.show-lg,
+.show-xl {
+  display: none !important;
+}
+
+/* line 42, node_modules/spectre.css/src/_layout.scss */
+.columns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.4rem;
+  margin-right: -0.4rem;
+}
+
+/* line 48, node_modules/spectre.css/src/_layout.scss */
+.columns.col-gapless {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* line 52, node_modules/spectre.css/src/_layout.scss */
+.columns.col-gapless > .column {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 57, node_modules/spectre.css/src/_layout.scss */
+.columns.col-oneline {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+/* line 62, node_modules/spectre.css/src/_layout.scss */
+.column {
+  flex: 1;
+  max-width: 100%;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+}
+
+/* line 68, node_modules/spectre.css/src/_layout.scss */
+.column.col-12, .column.col-11, .column.col-10, .column.col-9, .column.col-8, .column.col-7, .column.col-6, .column.col-5, .column.col-4, .column.col-3, .column.col-2, .column.col-1 {
+  flex: none;
+}
+
+/* line 83, node_modules/spectre.css/src/_layout.scss */
+.col-12 {
+  width: 100%;
+}
+
+/* line 86, node_modules/spectre.css/src/_layout.scss */
+.col-11 {
+  width: 91.66666667%;
+}
+
+/* line 89, node_modules/spectre.css/src/_layout.scss */
+.col-10 {
+  width: 83.33333333%;
+}
+
+/* line 92, node_modules/spectre.css/src/_layout.scss */
+.col-9 {
+  width: 75%;
+}
+
+/* line 95, node_modules/spectre.css/src/_layout.scss */
+.col-8 {
+  width: 66.66666667%;
+}
+
+/* line 98, node_modules/spectre.css/src/_layout.scss */
+.col-7 {
+  width: 58.33333333%;
+}
+
+/* line 101, node_modules/spectre.css/src/_layout.scss */
+.col-6 {
+  width: 50%;
+}
+
+/* line 104, node_modules/spectre.css/src/_layout.scss */
+.col-5 {
+  width: 41.66666667%;
+}
+
+/* line 107, node_modules/spectre.css/src/_layout.scss */
+.col-4 {
+  width: 33.33333333%;
+}
+
+/* line 110, node_modules/spectre.css/src/_layout.scss */
+.col-3 {
+  width: 25%;
+}
+
+/* line 113, node_modules/spectre.css/src/_layout.scss */
+.col-2 {
+  width: 16.66666667%;
+}
+
+/* line 116, node_modules/spectre.css/src/_layout.scss */
+.col-1 {
+  width: 8.33333333%;
+}
+
+/* line 119, node_modules/spectre.css/src/_layout.scss */
+.col-auto {
+  flex: 0 0 auto;
+  max-width: none;
+  width: auto;
+}
+
+/* line 124, node_modules/spectre.css/src/_layout.scss */
+.col-mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 128, node_modules/spectre.css/src/_layout.scss */
+.col-ml-auto {
+  margin-left: auto;
+}
+
+/* line 131, node_modules/spectre.css/src/_layout.scss */
+.col-mr-auto {
+  margin-right: auto;
+}
+
+@media (max-width: 1280px) {
+  /* line 135, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-12,
+  .col-xl-11,
+  .col-xl-10,
+  .col-xl-9,
+  .col-xl-8,
+  .col-xl-7,
+  .col-xl-6,
+  .col-xl-5,
+  .col-xl-4,
+  .col-xl-3,
+  .col-xl-2,
+  .col-xl-1 {
+    flex: none;
+  }
+  /* line 149, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-12 {
+    width: 100%;
+  }
+  /* line 152, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-11 {
+    width: 91.66666667%;
+  }
+  /* line 155, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-10 {
+    width: 83.33333333%;
+  }
+  /* line 158, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-9 {
+    width: 75%;
+  }
+  /* line 161, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-8 {
+    width: 66.66666667%;
+  }
+  /* line 164, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-7 {
+    width: 58.33333333%;
+  }
+  /* line 167, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-6 {
+    width: 50%;
+  }
+  /* line 170, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-5 {
+    width: 41.66666667%;
+  }
+  /* line 173, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-4 {
+    width: 33.33333333%;
+  }
+  /* line 176, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-3 {
+    width: 25%;
+  }
+  /* line 179, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-2 {
+    width: 16.66666667%;
+  }
+  /* line 182, node_modules/spectre.css/src/_layout.scss */
+  .col-xl-1 {
+    width: 8.33333333%;
+  }
+  /* line 185, node_modules/spectre.css/src/_layout.scss */
+  .hide-xl {
+    display: none !important;
+  }
+  /* line 188, node_modules/spectre.css/src/_layout.scss */
+  .show-xl {
+    display: block !important;
+  }
+}
+
+@media (max-width: 960px) {
+  /* line 193, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-12,
+  .col-lg-11,
+  .col-lg-10,
+  .col-lg-9,
+  .col-lg-8,
+  .col-lg-7,
+  .col-lg-6,
+  .col-lg-5,
+  .col-lg-4,
+  .col-lg-3,
+  .col-lg-2,
+  .col-lg-1 {
+    flex: none;
+  }
+  /* line 207, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-12 {
+    width: 100%;
+  }
+  /* line 210, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  /* line 213, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  /* line 216, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-9 {
+    width: 75%;
+  }
+  /* line 219, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  /* line 222, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  /* line 225, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-6 {
+    width: 50%;
+  }
+  /* line 228, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  /* line 231, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  /* line 234, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-3 {
+    width: 25%;
+  }
+  /* line 237, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  /* line 240, node_modules/spectre.css/src/_layout.scss */
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+  /* line 243, node_modules/spectre.css/src/_layout.scss */
+  .hide-lg {
+    display: none !important;
+  }
+  /* line 246, node_modules/spectre.css/src/_layout.scss */
+  .show-lg {
+    display: block !important;
+  }
+}
+
+@media (max-width: 840px) {
+  /* line 251, node_modules/spectre.css/src/_layout.scss */
+  .col-md-12,
+  .col-md-11,
+  .col-md-10,
+  .col-md-9,
+  .col-md-8,
+  .col-md-7,
+  .col-md-6,
+  .col-md-5,
+  .col-md-4,
+  .col-md-3,
+  .col-md-2,
+  .col-md-1 {
+    flex: none;
+  }
+  /* line 265, node_modules/spectre.css/src/_layout.scss */
+  .col-md-12 {
+    width: 100%;
+  }
+  /* line 268, node_modules/spectre.css/src/_layout.scss */
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  /* line 271, node_modules/spectre.css/src/_layout.scss */
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  /* line 274, node_modules/spectre.css/src/_layout.scss */
+  .col-md-9 {
+    width: 75%;
+  }
+  /* line 277, node_modules/spectre.css/src/_layout.scss */
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  /* line 280, node_modules/spectre.css/src/_layout.scss */
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  /* line 283, node_modules/spectre.css/src/_layout.scss */
+  .col-md-6 {
+    width: 50%;
+  }
+  /* line 286, node_modules/spectre.css/src/_layout.scss */
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  /* line 289, node_modules/spectre.css/src/_layout.scss */
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  /* line 292, node_modules/spectre.css/src/_layout.scss */
+  .col-md-3 {
+    width: 25%;
+  }
+  /* line 295, node_modules/spectre.css/src/_layout.scss */
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  /* line 298, node_modules/spectre.css/src/_layout.scss */
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+  /* line 301, node_modules/spectre.css/src/_layout.scss */
+  .hide-md {
+    display: none !important;
+  }
+  /* line 304, node_modules/spectre.css/src/_layout.scss */
+  .show-md {
+    display: block !important;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 309, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-12,
+  .col-sm-11,
+  .col-sm-10,
+  .col-sm-9,
+  .col-sm-8,
+  .col-sm-7,
+  .col-sm-6,
+  .col-sm-5,
+  .col-sm-4,
+  .col-sm-3,
+  .col-sm-2,
+  .col-sm-1 {
+    flex: none;
+  }
+  /* line 323, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-12 {
+    width: 100%;
+  }
+  /* line 326, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  /* line 329, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  /* line 332, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-9 {
+    width: 75%;
+  }
+  /* line 335, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  /* line 338, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  /* line 341, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-6 {
+    width: 50%;
+  }
+  /* line 344, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  /* line 347, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  /* line 350, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-3 {
+    width: 25%;
+  }
+  /* line 353, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  /* line 356, node_modules/spectre.css/src/_layout.scss */
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+  /* line 359, node_modules/spectre.css/src/_layout.scss */
+  .hide-sm {
+    display: none !important;
+  }
+  /* line 362, node_modules/spectre.css/src/_layout.scss */
+  .show-sm {
+    display: block !important;
+  }
+}
+
+@media (max-width: 480px) {
+  /* line 367, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-12,
+  .col-xs-11,
+  .col-xs-10,
+  .col-xs-9,
+  .col-xs-8,
+  .col-xs-7,
+  .col-xs-6,
+  .col-xs-5,
+  .col-xs-4,
+  .col-xs-3,
+  .col-xs-2,
+  .col-xs-1 {
+    flex: none;
+  }
+  /* line 381, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-12 {
+    width: 100%;
+  }
+  /* line 384, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-11 {
+    width: 91.66666667%;
+  }
+  /* line 387, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-10 {
+    width: 83.33333333%;
+  }
+  /* line 390, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-9 {
+    width: 75%;
+  }
+  /* line 393, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-8 {
+    width: 66.66666667%;
+  }
+  /* line 396, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-7 {
+    width: 58.33333333%;
+  }
+  /* line 399, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-6 {
+    width: 50%;
+  }
+  /* line 402, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-5 {
+    width: 41.66666667%;
+  }
+  /* line 405, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-4 {
+    width: 33.33333333%;
+  }
+  /* line 408, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-3 {
+    width: 25%;
+  }
+  /* line 411, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-2 {
+    width: 16.66666667%;
+  }
+  /* line 414, node_modules/spectre.css/src/_layout.scss */
+  .col-xs-1 {
+    width: 8.33333333%;
+  }
+  /* line 417, node_modules/spectre.css/src/_layout.scss */
+  .hide-xs {
+    display: none !important;
+  }
+  /* line 420, node_modules/spectre.css/src/_layout.scss */
+  .show-xs {
+    display: block !important;
+  }
+}
+
+/* line 2, node_modules/spectre.css/src/_navbar.scss */
+.navbar {
+  align-items: stretch;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* line 8, node_modules/spectre.css/src/_navbar.scss */
+.navbar .navbar-section {
+  align-items: center;
+  display: flex;
+  flex: 1 0 0;
+}
+
+/* line 13, node_modules/spectre.css/src/_navbar.scss */
+.navbar .navbar-section:not(:first-child):last-child {
+  justify-content: flex-end;
+}
+
+/* line 18, node_modules/spectre.css/src/_navbar.scss */
+.navbar .navbar-center {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+/* line 24, node_modules/spectre.css/src/_navbar.scss */
+.navbar .navbar-brand {
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+/* line 2, node_modules/spectre.css/src/_cards.scss */
+.card {
+  background: #fff;
+  border: 0.05rem solid #dadee4;
+  border-radius: 0.1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 9, node_modules/spectre.css/src/_cards.scss */
+.card .card-header,
+.card .card-body,
+.card .card-footer {
+  padding: 0.8rem;
+  padding-bottom: 0;
+}
+
+/* line 15, node_modules/spectre.css/src/_cards.scss */
+.card .card-header:last-child,
+.card .card-body:last-child,
+.card .card-footer:last-child {
+  padding-bottom: 0.8rem;
+}
+
+/* line 20, node_modules/spectre.css/src/_cards.scss */
+.card .card-body {
+  flex: 1 1 auto;
+}
+
+/* line 24, node_modules/spectre.css/src/_cards.scss */
+.card .card-image {
+  padding-top: 0.8rem;
+}
+
+/* line 27, node_modules/spectre.css/src/_cards.scss */
+.card .card-image:first-child {
+  padding-top: 0;
+}
+
+/* line 30, node_modules/spectre.css/src/_cards.scss */
+.card .card-image:first-child img {
+  border-top-left-radius: 0.1rem;
+  border-top-right-radius: 0.1rem;
+}
+
+/* line 37, node_modules/spectre.css/src/_cards.scss */
+.card .card-image:last-child img {
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+}
+
+/* line 2, node_modules/spectre.css/src/_dropdowns.scss */
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+/* line 6, node_modules/spectre.css/src/_dropdowns.scss */
+.dropdown .menu {
+  animation: slide-down .15s ease 1;
+  display: none;
+  left: 0;
+  max-height: 50vh;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+}
+
+/* line 17, node_modules/spectre.css/src/_dropdowns.scss */
+.dropdown.dropdown-right .menu {
+  left: auto;
+  right: 0;
+}
+
+/* line 23, node_modules/spectre.css/src/_dropdowns.scss */
+.dropdown.active .menu,
+.dropdown .dropdown-toggle:focus + .menu,
+.dropdown .menu:hover {
+  display: block;
+}
+
+/* line 31, node_modules/spectre.css/src/_dropdowns.scss */
+.dropdown .btn-group .dropdown-toggle:nth-last-child(2) {
+  border-bottom-right-radius: 0.1rem;
+  border-top-right-radius: 0.1rem;
+}
+
+/* line 6, node_modules/spectre.css/src/icons/_icons-core.scss */
+.icon {
+  box-sizing: border-box;
+  display: inline-block;
+  font-size: inherit;
+  font-style: normal;
+  height: 1em;
+  position: relative;
+  text-indent: -9999px;
+  vertical-align: middle;
+  width: 1em;
+}
+
+/* line 16, node_modules/spectre.css/src/icons/_icons-core.scss */
+.icon::before, .icon::after {
+  content: "";
+  display: block;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 27, node_modules/spectre.css/src/icons/_icons-core.scss */
+.icon.icon-2x {
+  font-size: 1.6rem;
+}
+
+/* line 31, node_modules/spectre.css/src/icons/_icons-core.scss */
+.icon.icon-3x {
+  font-size: 2.4rem;
+}
+
+/* line 35, node_modules/spectre.css/src/icons/_icons-core.scss */
+.icon.icon-4x {
+  font-size: 3.2rem;
+}
+
+/* line 45, node_modules/spectre.css/src/icons/_icons-core.scss */
+.accordion .icon,
+.btn .icon,
+.toast .icon,
+.menu .icon {
+  vertical-align: -10%;
+}
+
+/* line 51, node_modules/spectre.css/src/icons/_icons-core.scss */
+.btn-lg .icon {
+  vertical-align: -15%;
+}
+
+/* line 10, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-arrow-down::before,
+.icon-arrow-left::before,
+.icon-arrow-right::before,
+.icon-arrow-up::before,
+.icon-downward::before,
+.icon-back::before,
+.icon-forward::before,
+.icon-upward::before {
+  border: 0.1rem solid currentColor;
+  border-bottom: 0;
+  border-right: 0;
+  height: .65em;
+  width: .65em;
+}
+
+/* line 20, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-arrow-down::before {
+  transform: translate(-50%, -75%) rotate(225deg);
+}
+
+/* line 26, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-arrow-left::before {
+  transform: translate(-25%, -50%) rotate(-45deg);
+}
+
+/* line 32, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-arrow-right::before {
+  transform: translate(-75%, -50%) rotate(135deg);
+}
+
+/* line 38, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-arrow-up::before {
+  transform: translate(-50%, -25%) rotate(45deg);
+}
+
+/* line 45, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-back::after,
+.icon-forward::after {
+  background: currentColor;
+  height: 0.1rem;
+  width: .8em;
+}
+
+/* line 54, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-downward::after,
+.icon-upward::after {
+  background: currentColor;
+  height: .8em;
+  width: 0.1rem;
+}
+
+/* line 62, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-back::after {
+  left: 55%;
+}
+
+/* line 65, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-back::before {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* line 71, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-downward::after {
+  top: 45%;
+}
+
+/* line 74, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-downward::before {
+  transform: translate(-50%, -50%) rotate(-135deg);
+}
+
+/* line 80, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-forward::after {
+  left: 45%;
+}
+
+/* line 83, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-forward::before {
+  transform: translate(-50%, -50%) rotate(135deg);
+}
+
+/* line 89, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-upward::after {
+  top: 55%;
+}
+
+/* line 92, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-upward::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* line 99, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-caret::before {
+  border-top: .3em solid currentColor;
+  border-right: .3em solid transparent;
+  border-left: .3em solid transparent;
+  height: 0;
+  transform: translate(-50%, -25%);
+  width: 0;
+}
+
+/* line 111, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-menu::before {
+  background: currentColor;
+  box-shadow: 0 -.35em, 0 .35em;
+  height: 0.1rem;
+  width: 100%;
+}
+
+/* line 121, node_modules/spectre.css/src/icons/_icons-navigation.scss */
+.icon-apps::before {
+  background: currentColor;
+  box-shadow: -.35em -.35em, -.35em 0, -.35em .35em, 0 -.35em, 0 .35em, .35em -.35em, .35em 0, .35em .35em;
+  height: 3px;
+  width: 3px;
+}
+
+/* line 4, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-resize-horiz::before, .icon-resize-horiz::after,
+.icon-resize-vert::before,
+.icon-resize-vert::after {
+  border: 0.1rem solid currentColor;
+  border-bottom: 0;
+  border-right: 0;
+  height: .45em;
+  width: .45em;
+}
+
+/* line 12, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-resize-horiz::before,
+.icon-resize-vert::before {
+  transform: translate(-50%, -90%) rotate(45deg);
+}
+
+/* line 15, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-resize-horiz::after,
+.icon-resize-vert::after {
+  transform: translate(-50%, -10%) rotate(225deg);
+}
+
+/* line 21, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-resize-horiz::before {
+  transform: translate(-90%, -50%) rotate(-45deg);
+}
+
+/* line 24, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-resize-horiz::after {
+  transform: translate(-10%, -50%) rotate(135deg);
+}
+
+/* line 32, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-more-horiz::before,
+.icon-more-vert::before {
+  background: currentColor;
+  box-shadow: -.4em 0, .4em 0;
+  border-radius: 50%;
+  height: 3px;
+  width: 3px;
+}
+
+/* line 42, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-more-vert::before {
+  box-shadow: 0 -.4em, 0 .4em;
+}
+
+/* line 51, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-plus::before,
+.icon-minus::before,
+.icon-cross::before {
+  background: currentColor;
+  height: 0.1rem;
+  width: 100%;
+}
+
+/* line 60, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-plus::after,
+.icon-cross::after {
+  background: currentColor;
+  height: 100%;
+  width: 0.1rem;
+}
+
+/* line 68, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-cross::before {
+  width: 100%;
+}
+
+/* line 71, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-cross::after {
+  height: 100%;
+}
+
+/* line 74, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-cross::before, .icon-cross::after {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* line 82, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-check::before {
+  border: 0.1rem solid currentColor;
+  border-right: 0;
+  border-top: 0;
+  height: .5em;
+  width: .9em;
+  transform: translate(-50%, -75%) rotate(-45deg);
+}
+
+/* line 93, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-stop {
+  border: 0.1rem solid currentColor;
+  border-radius: 50%;
+}
+
+/* line 96, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-stop::before {
+  background: currentColor;
+  height: 0.1rem;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: 1em;
+}
+
+/* line 105, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-shutdown {
+  border: 0.1rem solid currentColor;
+  border-radius: 50%;
+  border-top-color: transparent;
+}
+
+/* line 109, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-shutdown::before {
+  background: currentColor;
+  content: "";
+  height: .5em;
+  top: .1em;
+  width: 0.1rem;
+}
+
+/* line 120, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-refresh::before {
+  border: 0.1rem solid currentColor;
+  border-radius: 50%;
+  border-right-color: transparent;
+  height: 1em;
+  width: 1em;
+}
+
+/* line 127, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-refresh::after {
+  border: .2em solid currentColor;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  height: 0;
+  left: 80%;
+  top: 20%;
+  width: 0;
+}
+
+/* line 140, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-search::before {
+  border: 0.1rem solid currentColor;
+  border-radius: 50%;
+  height: .75em;
+  left: 5%;
+  top: 5%;
+  transform: translate(0, 0) rotate(45deg);
+  width: .75em;
+}
+
+/* line 149, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-search::after {
+  background: currentColor;
+  height: 0.1rem;
+  left: 80%;
+  top: 80%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  width: .4em;
+}
+
+/* line 161, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-edit::before {
+  border: 0.1rem solid currentColor;
+  height: .4em;
+  transform: translate(-40%, -60%) rotate(-45deg);
+  width: .85em;
+}
+
+/* line 167, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-edit::after {
+  border: .15em solid currentColor;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  height: 0;
+  left: 5%;
+  top: 95%;
+  transform: translate(0, -100%);
+  width: 0;
+}
+
+/* line 181, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-delete::before {
+  border: 0.1rem solid currentColor;
+  border-bottom-left-radius: 0.1rem;
+  border-bottom-right-radius: 0.1rem;
+  border-top: 0;
+  height: .75em;
+  top: 60%;
+  width: .75em;
+}
+
+/* line 190, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-delete::after {
+  background: currentColor;
+  box-shadow: -.25em .2em, .25em .2em;
+  height: 0.1rem;
+  top: 0.05rem;
+  width: .5em;
+}
+
+/* line 200, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-share {
+  border: 0.1rem solid currentColor;
+  border-radius: 0.1rem;
+  border-right: 0;
+  border-top: 0;
+}
+
+/* line 205, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-share::before {
+  border: 0.1rem solid currentColor;
+  border-left: 0;
+  border-top: 0;
+  height: .4em;
+  left: 100%;
+  top: .25em;
+  transform: translate(-125%, -50%) rotate(-45deg);
+  width: .4em;
+}
+
+/* line 215, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-share::after {
+  border: 0.1rem solid currentColor;
+  border-bottom: 0;
+  border-right: 0;
+  border-radius: 75% 0;
+  height: .5em;
+  width: .6em;
+}
+
+/* line 227, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-flag::before {
+  background: currentColor;
+  height: 1em;
+  left: 15%;
+  width: 0.1rem;
+}
+
+/* line 233, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-flag::after {
+  border: 0.1rem solid currentColor;
+  border-bottom-right-radius: 0.1rem;
+  border-left: 0;
+  border-top-right-radius: 0.1rem;
+  height: .65em;
+  top: 35%;
+  left: 60%;
+  width: .8em;
+}
+
+/* line 247, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-bookmark::before {
+  border: 0.1rem solid currentColor;
+  border-bottom: 0;
+  border-top-left-radius: 0.1rem;
+  border-top-right-radius: 0.1rem;
+  height: .9em;
+  width: .8em;
+}
+
+/* line 255, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-bookmark::after {
+  border: 0.1rem solid currentColor;
+  border-bottom: 0;
+  border-left: 0;
+  border-radius: 0.1rem;
+  height: .5em;
+  transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
+  width: .5em;
+}
+
+/* line 267, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-download,
+.icon-upload {
+  border-bottom: 0.1rem solid currentColor;
+}
+
+/* line 270, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-download::before,
+.icon-upload::before {
+  border: 0.1rem solid currentColor;
+  border-bottom: 0;
+  border-right: 0;
+  height: .5em;
+  width: .5em;
+  transform: translate(-50%, -60%) rotate(-135deg);
+}
+
+/* line 278, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-download::after,
+.icon-upload::after {
+  background: currentColor;
+  height: .6em;
+  top: 40%;
+  width: 0.1rem;
+}
+
+/* line 287, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-upload::before {
+  transform: translate(-50%, -60%) rotate(45deg);
+}
+
+/* line 290, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-upload::after {
+  top: 50%;
+}
+
+/* line 297, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-copy::before {
+  border: 0.1rem solid currentColor;
+  border-radius: 0.1rem;
+  border-right: 0;
+  border-bottom: 0;
+  height: .8em;
+  left: 40%;
+  top: 35%;
+  width: .8em;
+}
+
+/* line 307, node_modules/spectre.css/src/icons/_icons-action.scss */
+.icon-copy::after {
+  border: 0.1rem solid currentColor;
+  border-radius: 0.1rem;
+  height: .8em;
+  left: 60%;
+  top: 60%;
+  width: .8em;
+}
+
+/* line 2, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-time {
+  border: 0.1rem solid currentColor;
+  border-radius: 50%;
+}
+
+/* line 5, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-time::before {
+  background: currentColor;
+  height: .4em;
+  transform: translate(-50%, -75%);
+  width: 0.1rem;
+}
+
+/* line 11, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-time::after {
+  background: currentColor;
+  height: .3em;
+  transform: translate(-50%, -75%) rotate(90deg);
+  transform-origin: 50% 90%;
+  width: 0.1rem;
+}
+
+/* line 22, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-mail::before {
+  border: 0.1rem solid currentColor;
+  border-radius: 0.1rem;
+  height: .8em;
+  width: 1em;
+}
+
+/* line 28, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-mail::after {
+  border: 0.1rem solid currentColor;
+  border-right: 0;
+  border-top: 0;
+  height: .5em;
+  transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
+  width: .5em;
+}
+
+/* line 40, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-people::before {
+  border: 0.1rem solid currentColor;
+  border-radius: 50%;
+  height: .45em;
+  top: 25%;
+  width: .45em;
+}
+
+/* line 47, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-people::after {
+  border: 0.1rem solid currentColor;
+  border-radius: 50% 50% 0 0;
+  height: .4em;
+  top: 75%;
+  width: .9em;
+}
+
+/* line 57, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-message {
+  border: 0.1rem solid currentColor;
+  border-bottom: 0;
+  border-radius: 0.1rem;
+  border-right: 0;
+}
+
+/* line 62, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-message::before {
+  border: 0.1rem solid currentColor;
+  border-bottom-right-radius: 0.1rem;
+  border-left: 0;
+  border-top: 0;
+  height: .8em;
+  left: 65%;
+  top: 40%;
+  width: .7em;
+}
+
+/* line 72, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-message::after {
+  background: currentColor;
+  border-radius: 0.1rem;
+  height: .3em;
+  left: 10%;
+  top: 100%;
+  transform: translate(0, -90%) rotate(45deg);
+  width: 0.1rem;
+}
+
+/* line 84, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-photo {
+  border: 0.1rem solid currentColor;
+  border-radius: 0.1rem;
+}
+
+/* line 87, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-photo::before {
+  border: 0.1rem solid currentColor;
+  border-radius: 50%;
+  height: .25em;
+  left: 35%;
+  top: 35%;
+  width: .25em;
+}
+
+/* line 95, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-photo::after {
+  border: 0.1rem solid currentColor;
+  border-bottom: 0;
+  border-left: 0;
+  height: .5em;
+  left: 60%;
+  transform: translate(-50%, 25%) rotate(-45deg);
+  width: .5em;
+}
+
+/* line 108, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-link::before, .icon-link::after {
+  border: 0.1rem solid currentColor;
+  border-radius: 5em 0 0 5em;
+  border-right: 0;
+  height: .5em;
+  width: .75em;
+}
+
+/* line 116, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-link::before {
+  transform: translate(-70%, -45%) rotate(-45deg);
+}
+
+/* line 119, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-link::after {
+  transform: translate(-30%, -55%) rotate(135deg);
+}
+
+/* line 126, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-location::before {
+  border: 0.1rem solid currentColor;
+  border-radius: 50% 50% 50% 0;
+  height: .8em;
+  transform: translate(-50%, -60%) rotate(-45deg);
+  width: .8em;
+}
+
+/* line 133, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-location::after {
+  border: 0.1rem solid currentColor;
+  border-radius: 50%;
+  height: .2em;
+  transform: translate(-50%, -80%);
+  width: .2em;
+}
+
+/* line 143, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-emoji {
+  border: 0.1rem solid currentColor;
+  border-radius: 50%;
+}
+
+/* line 146, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-emoji::before {
+  border-radius: 50%;
+  box-shadow: -.17em -.1em, .17em -.1em;
+  height: .15em;
+  width: .15em;
+}
+
+/* line 152, node_modules/spectre.css/src/icons/_icons-object.scss */
+.icon-emoji::after {
+  border: 0.1rem solid currentColor;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  border-right-color: transparent;
+  height: .5em;
+  transform: translate(-50%, -40%) rotate(-135deg);
+  width: .5em;
+}
+
+/* line 2, node_modules/spectre.css/src/_menus.scss */
+.menu {
+  box-shadow: 0 0.05rem 0.2rem rgba(48, 55, 66, 0.3);
+  background: #fff;
+  border-radius: 0.1rem;
+  list-style: none;
+  margin: 0;
+  min-width: 180px;
+  padding: 0.4rem;
+  transform: translateY(0.2rem);
+  z-index: 300;
+}
+
+/* line 13, node_modules/spectre.css/src/_menus.scss */
+.menu.menu-nav {
+  background: transparent;
+  box-shadow: none;
+}
+
+/* line 18, node_modules/spectre.css/src/_menus.scss */
+.menu .menu-item {
+  margin-top: 0;
+  padding: 0 0.4rem;
+  text-decoration: none;
+  user-select: none;
+}
+
+/* line 24, node_modules/spectre.css/src/_menus.scss */
+.menu .menu-item > a {
+  border-radius: 0.1rem;
+  color: inherit;
+  display: block;
+  margin: 0 -0.4rem;
+  padding: 0.2rem 0.4rem;
+  text-decoration: none;
+}
+
+/* line 31, node_modules/spectre.css/src/_menus.scss */
+.menu .menu-item > a:focus, .menu .menu-item > a:hover {
+  background: #f1f1fc;
+  color: #5755d9;
+}
+
+/* line 36, node_modules/spectre.css/src/_menus.scss */
+.menu .menu-item > a:active, .menu .menu-item > a.active {
+  background: #f1f1fc;
+  color: #5755d9;
+}
+
+/* line 43, node_modules/spectre.css/src/_menus.scss */
+.menu .menu-item .form-checkbox,
+.menu .menu-item .form-radio,
+.menu .menu-item .form-switch {
+  margin: 0.1rem 0;
+}
+
+/* line 49, node_modules/spectre.css/src/_menus.scss */
+.menu .menu-item + .menu-item {
+  margin-top: 0.2rem;
+}
+
+/* line 54, node_modules/spectre.css/src/_menus.scss */
+.menu .menu-badge {
+  float: right;
+  padding: 0.2rem 0;
+}
+
+/* line 58, node_modules/spectre.css/src/_menus.scss */
+.menu .menu-badge .btn {
+  margin-top: -0.1rem;
+}
+
+/* line 3, node_modules/spectre.css/src/_timelines.scss */
+.timeline .timeline-item {
+  display: flex;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+/* line 7, node_modules/spectre.css/src/_timelines.scss */
+.timeline .timeline-item::before {
+  background: #dadee4;
+  content: "";
+  height: 100%;
+  left: 11px;
+  position: absolute;
+  top: 1.2rem;
+  width: 2px;
+}
+
+/* line 17, node_modules/spectre.css/src/_timelines.scss */
+.timeline .timeline-item .timeline-left {
+  flex: 0 0 auto;
+}
+
+/* line 21, node_modules/spectre.css/src/_timelines.scss */
+.timeline .timeline-item .timeline-content {
+  flex: 1 1 auto;
+  padding: 2px 0 2px 0.8rem;
+}
+
+/* line 26, node_modules/spectre.css/src/_timelines.scss */
+.timeline .timeline-item .timeline-icon {
+  align-items: center;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  height: 1.2rem;
+  justify-content: center;
+  text-align: center;
+  width: 1.2rem;
+}
+
+/* line 35, node_modules/spectre.css/src/_timelines.scss */
+.timeline .timeline-item .timeline-icon::before {
+  border: 0.1rem solid #5755d9;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 0.4rem;
+  left: 0.4rem;
+  position: absolute;
+  top: 0.4rem;
+  width: 0.4rem;
+}
+
+/* line 47, node_modules/spectre.css/src/_timelines.scss */
+.timeline .timeline-item .timeline-icon.icon-lg {
+  background: #5755d9;
+  line-height: 1.2rem;
+}
+
+/* line 50, node_modules/spectre.css/src/_timelines.scss */
+.timeline .timeline-item .timeline-icon.icon-lg::before {
+  content: none;
+}
+
+/* line 2, src/scss/base/_base.scss */
+body {
+  font-weight: 700;
+}
+
+/* line 6, src/scss/base/_base.scss */
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+/* line 2, src/scss/layout/_layout.scss */
+.container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* line 8, src/scss/layout/_layout.scss */
+.align-items-center {
+  align-items: center;
+}
+
+/* line 2, src/scss/components/_header.scss */
+.header {
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 10em;
+  position: relative;
+  color: #fff;
+  background: linear-gradient(to top left, #00c6ff, #0072ff);
+}
+
+/* line 11, src/scss/components/_header.scss */
+.header__content {
+  max-width: 1140px;
+  padding-top: 1rem;
+  margin: auto;
+}
+
+/* line 17, src/scss/components/_header.scss */
+.header__title {
+  font-size: 2.55em;
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}
+
+/* line 23, src/scss/components/_header.scss */
+.header__subtitle {
+  font-size: 1.23em;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-top: 0;
+}
+
+/* line 30, src/scss/components/_header.scss */
+.header__form {
+  max-width: 450px;
+  padding: 1.5em;
+  margin-top: 2em;
+  margin-left: auto;
+  border-radius: 3px;
+  color: #444;
+  background-color: #fff;
+}
+
+@media (max-width: 840px) {
+  /* line 30, src/scss/components/_header.scss */
+  .header__form {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* line 44, src/scss/components/_header.scss */
+.header__form h2 {
+  margin-top: 0;
+}
+
+/* line 49, src/scss/components/_header.scss */
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 53, src/scss/components/_header.scss */
+.form-row:nth-child(4) {
+  margin-top: 1.5em;
+}
+
+/* line 56, src/scss/components/_header.scss */
+.form .form-group {
+  margin-bottom: 0;
+  padding-left: 0.65em;
+  border-radius: 4px;
+  border: 1px solid #dadee4;
+  z-index: 100;
+}
+
+/* line 63, src/scss/components/_header.scss */
+.form .form-group:nth-child(1) {
+  width: 60%;
+}
+
+/* line 67, src/scss/components/_header.scss */
+.form .form-group:nth-child(2) {
+  width: 35%;
+  position: relative;
+  display: flex;
+}
+
+/* line 72, src/scss/components/_header.scss */
+.form .form-group:nth-child(2) .form-dropdown {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* line 79, src/scss/components/_header.scss */
+.form .form-group .moneda {
+  display: block;
+  position: absolute;
+  font-size: 0.7rem;
+  line-height: 1.2rem;
+  padding: 0.3rem 0 0;
+}
+
+/* line 87, src/scss/components/_header.scss */
+.form .form-group .dropdown {
+  width: 100%;
+}
+
+/* line 90, src/scss/components/_header.scss */
+.form .form-group .dropdown-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #3b4351;
+}
+
+/* line 96, src/scss/components/_header.scss */
+.form .form-group .dropdown-toggle span {
+  font-weight: normal;
+}
+
+/* line 101, src/scss/components/_header.scss */
+.form-label {
+  font-size: 0.7rem;
+  padding-bottom: 0;
+}
+
+/* line 106, src/scss/components/_header.scss */
+.form-input.input-sm {
+  border: 0;
+  outline: 0px;
+  padding-left: 0px;
+}
+
+/* line 112, src/scss/components/_header.scss */
+.form .btn-form {
+  height: 2.5rem;
+  border: 1px solid #03c18f;
+  color: #ffffff;
+  background-color: #03D09A;
+}
+
+/* line 118, src/scss/components/_header.scss */
+.form .btn-form:hover {
+  background-color: #03daa1;
+}
+
+/* line 125, src/scss/components/_header.scss */
+.timeline-icon::before {
+  border: 0.1rem solid #dadee4 !important;
+}
+
+/* line 127, src/scss/components/_header.scss */
+.timeline-item:nth-child(1) {
+  margin-top: -1.2rem;
+  z-index: 1;
+}
+
+/* line 131, src/scss/components/_header.scss */
+.timeline-item:nth-child(1) .none::before {
+  border: 0 !important;
+}
+
+/* line 132, src/scss/components/_header.scss */
+.timeline-item:nth-child(1) .timeline-content {
+  height: 35px;
+}
+
+/* line 136, src/scss/components/_header.scss */
+.timeline-content h3, .timeline-content p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* line 141, src/scss/components/_header.scss */
+.timeline-content p {
+  font-weight: normal;
+  font-size: 0.65rem;
+  color: #bcc3ce;
+}
+
+/* line 3, src/scss/components/_navbar.scss */
+.navbar__brand img {
+  width: 62px;
+  height: 62px;
+}
+
+/* line 8, src/scss/components/_navbar.scss */
+.navbar__list {
+  display: flex;
+  align-items: center;
+  flex: 1 0 0;
+}
+
+/* line 13, src/scss/components/_navbar.scss */
+.navbar__list:not(:first-child):last-child {
+  justify-content: flex-end;
+}
+
+/* line 20, src/scss/components/_navbar.scss */
+.navbar__nav {
+  display: none;
+}
+
+/* line 23, src/scss/components/_navbar.scss */
+.navbar__nav li {
+  margin-left: 0.5em;
+}
+
+/* line 28, src/scss/components/_navbar.scss */
+.navbar__toggle button {
+  width: 25px;
+  padding: 0;
+  background: 0 0;
+  border: 0;
+  outline: 0;
+}
+
+/* line 35, src/scss/components/_navbar.scss */
+.navbar__toggle button span {
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin: 0 0 7px 0;
+  background-color: #fff;
+}
+
+/* line 42, src/scss/components/_navbar.scss */
+.navbar__toggle button span:nth-child(2) {
+  transform: translate(4px);
+}
+
+/* line 2, src/scss/components/_main.scss */
+.main {
+  background-color: #F6F8F8;
+}
+
+/* line 2, src/scss/components/_about.scss */
+.about {
+  width: 100%;
+  text-align: center;
+  background-color: #F6F8F8;
+}
+
+/* line 7, src/scss/components/_about.scss */
+.about__card {
+  position: relative;
+  top: -4em;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 0px 1px 1px 1px #e8e8e8;
+}
+
+/* line 15, src/scss/components/_about.scss */
+.about__title {
+  padding-top: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+/* line 20, src/scss/components/_about.scss */
+.about .card {
+  border: 0;
+  padding: 1rem 0.5rem 0 0.5rem;
+}
+
+/* line 25, src/scss/components/_about.scss */
+.about .card-body p {
+  font-weight: 400;
+}
+
+/* line 4, src/scss/components/_ecosystem.scss */
+.ecosystem {
+  padding: 1rem 0 2.5rem;
+}
+
+/* line 7, src/scss/components/_ecosystem.scss */
+.ecosystem__content {
+  width: 90%;
+}
+
+/* line 9, src/scss/components/_ecosystem.scss */
+.ecosystem__descrption p {
+  font-weight: 400;
+}
+
+/* line 11, src/scss/components/_ecosystem.scss */
+.ecosystem__services {
+  padding-top: 2.5rem;
+}
+
+/* line 14, src/scss/components/_ecosystem.scss */
+.ecosystem__services .column {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 21, src/scss/components/_ecosystem.scss */
+.ecosystem .service {
+  width: 100px;
+  height: 100px;
+  margin: 0.5rem;
+  position: relative;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EBEBEB;
+}
+
+/* line 32, src/scss/components/_ecosystem.scss */
+.ecosystem .service img, .ecosystem .service--round {
+  width: 50px;
+  height: 50px;
+}
+
+/* line 38, src/scss/components/_ecosystem.scss */
+.ecosystem .service .figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* line 45, src/scss/components/_ecosystem.scss */
+.ecosystem .service figcaption {
+  font-weight: 400;
+  text-align: center;
+  color: #bcc3ce;
+}
+
+/* line 51, src/scss/components/_ecosystem.scss */
+.ecosystem .service--one, .ecosystem .service--two {
+  left: 40px;
+}
+
+/* line 55, src/scss/components/_ecosystem.scss */
+.ecosystem .service--two {
+  top: 50px;
+}
+
+/* line 58, src/scss/components/_ecosystem.scss */
+.ecosystem .service--three {
+  right: 40px;
+  bottom: 40px;
+}
+
+/* line 62, src/scss/components/_ecosystem.scss */
+.ecosystem .service--four {
+  right: 30px;
+}
+
+/* line 66, src/scss/components/_ecosystem.scss */
+.ecosystem .service--round {
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+/* line 2, src/scss/components/_testimonials.scss */
+.testimonials {
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+  background-color: #F2F5F8;
+}
+
+/* line 7, src/scss/components/_testimonials.scss */
+.testimonials__top {
+  width: 100%;
+  height: 8rem;
+  border-radius: 3px;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(to top left, #40E197, #24ACAE);
+}
+
+/* line 15, src/scss/components/_testimonials.scss */
+.testimonials__top h2 {
+  padding-top: 1rem;
+}
+
+/* line 18, src/scss/components/_testimonials.scss */
+.testimonials__bottom {
+  margin: 0 auto;
+  position: relative;
+  top: -4em;
+}
+
+/* line 25, src/scss/components/_testimonials.scss */
+.testimonials .card {
+  border-radius: 3px;
+  border: 0;
+  padding: 1rem 0.5rem 0 0.5rem;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 1px 1px 1px #e8e8e8;
+}
+
+/* line 33, src/scss/components/_testimonials.scss */
+.testimonials .card-title h3 {
+  margin-bottom: 0;
+}
+
+/* line 36, src/scss/components/_testimonials.scss */
+.testimonials .card-body .columns {
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+/* line 41, src/scss/components/_testimonials.scss */
+.testimonials .card-body .card__item {
+  position: relative;
+  -webkit-animation: fade-animation-1 25s ease-in-out infinite;
+  animation: fade-animation-1 25s ease-in-out infinite;
+}
+
+/* line 47, src/scss/components/_testimonials.scss */
+.testimonials .card-body p {
+  font-weight: 400;
+}
+
+/* line 50, src/scss/components/_testimonials.scss */
+.testimonials .card-person img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+@keyframes fade-animation-1 {
+  0%, 30% {
+    left: 0;
+  }
+  33%, 63% {
+    left: -100%;
+  }
+  66%, 90% {
+    left: -200%;
+  }
+  94%, 100% {
+    left: 0;
+  }
+}
+
+@-webkit-keyframes fade-animation-1 {
+  0%, 30% {
+    left: 0;
+  }
+  33%, 63% {
+    left: -100%;
+  }
+  66%, 90% {
+    left: -200%;
+  }
+  94%, 100% {
+    left: 0;
+  }
+}
+
+/* line 2, src/scss/components/_cta-bottom.scss */
+.cta-bottom {
+  width: 100%;
+  padding: 2.2rem 0;
+  color: #FFF;
+  background-color: #00c6ff;
+  background-repeat: repeat;
+  background-image: linear-gradient(to right, #00c6ff40 0%, #0072ffa6 100%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23f2f5f8' fill-opacity='0.24' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+/* line 15, src/scss/components/_cta-bottom.scss */
+.cta-bottom__content {
+  width: 90%;
+}
+
+/* line 18, src/scss/components/_cta-bottom.scss */
+.cta-bottom__content .btn {
+  background: #f6f8f8;
+  border-color: #f6f8f8;
+  color: #00bcff;
+  font-weight: 700;
+}
+
+/* line 24, src/scss/components/_cta-bottom.scss */
+.cta-bottom__content .btn:hover {
+  background: #0096ff;
+  border-color: #038ff1;
+  color: #fff;
+}
+
+/* line 32, src/scss/components/_cta-bottom.scss */
+.cta-bottom__title {
+  margin-top: 0;
+}
+
+/* line 36, src/scss/components/_cta-bottom.scss */
+.cta-bottom__subtitle {
+  margin-bottom: 2rem;
+}
+
+/* line 2, src/scss/components/_footer.scss */
+.footer {
+  padding: 2.2rem 0 0.5rem;
+}
+
+/* line 5, src/scss/components/_footer.scss */
+.footer__marketing {
+  width: 90%;
+}
+
+/* line 7, src/scss/components/_footer.scss */
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 0.7em;
+}
+
+/* line 12, src/scss/components/_footer.scss */
+.footer li {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+/* line 16, src/scss/components/_footer.scss */
+.footer li a {
+  color: #bcc3ce;
+}
+
+/* line 19, src/scss/components/_footer.scss */
+.footer .about {
+  text-align: left;
+}
+
+/* line 22, src/scss/components/_footer.scss */
+.footer .about h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+/* line 27, src/scss/components/_footer.scss */
+.footer .about p {
+  font-weight: 500;
+  margin-top: 0.5em;
+}
+
+/* line 33, src/scss/components/_footer.scss */
+.footer__icons {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+/* line 37, src/scss/components/_footer.scss */
+.footer__icons ul {
+  width: 100%;
+  display: flex;
+}
+
+/* line 41, src/scss/components/_footer.scss */
+.footer__icons ul li {
+  margin-right: 6px;
+}
+
+/* line 46, src/scss/components/_footer.scss */
+.footer__icons img {
+  width: 30px;
+  height: 30px;
+}
+
+/* line 52, src/scss/components/_footer.scss */
+.footer__bottom {
+  font-weight: 400;
+  text-align: center;
+  color: #bcc3ce;
+}
+
+/* line 2, src/scss/components/_utilities.scss */
+.icon-test {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #e43535;
+}
+
+/* line 3, src/scss/hacks/_hacks.scss */
+.border-none {
+  outline: none !important;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
