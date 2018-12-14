@@ -9,51 +9,64 @@
     <meta property="og:title" content="Home">
     <meta property="og:description" content="Pagina inicial de Theme Calculator">
     <meta property="og:image" content=""><link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/favicon.png">
   </head>
   <body>
-    <div class="wrapper">
-      <header class="header">
+    <div class="wrapper" id="app">
+      <header class="header" id="header">
         <div class="container grid-xl">
           <div class="header__navbar">
-            <nav class="navbar">
-              <section class="navbar-section">
-                <div class="navbar__brand"><img class="mr-2" src="img/exchange-gray.svg" alt="logo.png"></div>
-                <div class="navbar__list hide-sm"><a class="btn btn-link" href="/">Home</a><a class="btn btn-link" href="#exchange">Exchange</a><a class="btn btn-link" href="#about">Account</a><a class="btn btn-link" href="#support">Support</a>
+            <nav>
+              <div class="navbar navbar__content">
+                <section class="navbar-section z-index-10x5">
+                  <div class="navbar__brand"><img class="mr-2" src="img/exchange-gray.svg" alt="logo.png"></div>
+                </section>
+                <section class="navbar-center">
+                  <div class="navbar__list hide-sm"><a class="btn btn-link" href="/">Home</a><a class="btn btn-link" data-smoothie href="#features">Características</a><a class="btn btn-link" data-smoothie href="#services">Servicios</a><a class="btn btn-link" data-smoothie href="#testimonials">Testimonios</a></div>
+                </section>
+                <section class="navbar-section z-index-10x5">
+                  <div class="navbar__toggle" v-on:click="showToggleMenu">
+                    <div class="toggle" id="toggle" v-bind:class="{ close: toggleMenu }"><span class="line line-one"></span><span class="line line-two"></span></div>
+                  </div>
+                </section>
+              </div>
+              <transition name="fade">
+                <div class="navbar__menu" id="menu" v-show="toggleMenu" v-bind:class="{ show: toggleMenu }">
+                  <div class="navbar__menu-content">
+                    <div class="navbar__menu-top"></div>
+                    <div class="navbar__menu-center">
+                      <div class="navbar__menu-list"><a class="btn btn-link" href="/">Home</a><a class="btn btn-link" data-smoothie href="#features">Características</a><a class="btn btn-link" data-smoothie href="#services">Servicios</a><a class="btn btn-link" data-smoothie href="#testimonials">Testimonios</a></div>
+                    </div>
+                  </div>
                 </div>
-              </section>
-              <section class="navbar-section">
-                <div class="navbar__toggle">
-                  <button><span></span><span></span></button>
-                </div>
-              </section>
+              </transition>
             </nav>
           </div>
           <div class="header__content columns">
             <div class="column col-6 col-md-12">
-              <h1 class="header__title">Cambiar dinero de PayPal nunca a sido tan facil.</h1>
-              <p class="header__subtitle">Recíbelo en Bolivares, rápido y con la mejor cotización del mercado</p>
+              <h1 class="header__title">Una gran manera de mostrar sus servicios</h1>
+              <p class="header__subtitle">Debe utilizarse para contar una historia y permitir que sus usuarios sepan un poco más sobre su producto o servicio. ¿Cómo puedes beneficiarlos?</p>
+              <p class="note">*Los servicios de intercambio estan sujetos a ciertas comisiones.</p>
             </div>
             <div class="column col-6 col-md-12">
               <div class="header__form">
                 <div class="header__form-title">
-                  <h2>Calculadora</h2>
+                  <h2>Calculadora de conversión</h2>
                 </div>
                 <div class="header__form-body">
                   <form class="form" action="#">
                     <div class="form-row">
                       <div class="form-group">
-                        <label class="form-label" for="">Deposit Amount</label>
-                        <input class="form-input input-sm border-none" type="text" placeholder="0,00263425">
+                        <label class="form-label" for="">Cantidad a cambiar</label>
+                        <input class="form-input input-sm border-none" type="number" placeholder="0,00263425">
                       </div>
-                      <div class="form-group"><span class="moneda">Moneda</span>
+                      <div class="form-group dropdown-coins"><span class="moneda">Moneda</span>
                         <div class="form-dropdown">
                           <div class="dropdown dropdown-right"><a class="btn btn-link dropdown-toggle border-none" tabindex="0"><span>---</span><i class="icon icon-caret"></i></a>
                             <ul class="menu">
-                              <li class="menu-item"><a href="#dropdowns">BTC</a></li>
-                              <li class="menu-item"><a href="#dropdowns">LTC</a></li>
-                              <li class="menu-item"><a href="#dropdowns">BCH</a></li>
+                              <li class="menu-item" v-for="(coin, index) in coins" :key="index"><a href="#" v-on:click.stop.prevent="setCurrencyToChange(coin.name)">{{ coin.name }}</a></li>
                             </ul>
                           </div>
                         </div>
@@ -73,7 +86,7 @@
                           </div>
                           <div class="timeline-content">
                             <h3>1 BTC = 24.18070693 DASH</h3>
-                            <p>Exchange rate</p>
+                            <p>Tipo de cambio</p>
                           </div>
                         </div>
                         <div class="timeline-item" id="timeline-example-3">
@@ -82,23 +95,21 @@
                           </div>
                           <div class="timeline-content">
                             <h3>0.00084321 BTC</h3>
-                            <p>Transfer fee</p>
+                            <p>Comisiones</p>
                           </div>
                         </div>
                       </div>
                     </div>
                     <div class="form-row">
                       <div class="form-group">
-                        <label class="form-label" for="">Receive Amount</label>
-                        <input class="form-input input-sm border-none" type="text" placeholder="0,00263425">
+                        <label class="form-label" for="">Cantidad a recibir</label>
+                        <input class="form-input input-sm border-none" type="number" placeholder="0,00263425">
                       </div>
                       <div class="form-group"><span class="moneda">Moneda</span>
                         <div class="form-dropdown">
                           <div class="dropdown dropdown-right"><a class="btn btn-link dropdown-toggle border-none" tabindex="0"><span>---</span><i class="icon icon-caret"></i></a>
                             <ul class="menu">
-                              <li class="menu-item"><a href="#dropdowns">BTC</a></li>
-                              <li class="menu-item"><a href="#dropdowns">LTC</a></li>
-                              <li class="menu-item"><a href="#dropdowns">BCH</a></li>
+                              <li class="menu-item" v-for="(coin, index) in coins" :key="index"><a href="#" v-on:click.stop.prevent="setCurrencyToReceive(coin.name)">{{ coin.name }}</a></li>
                             </ul>
                           </div>
                         </div>
@@ -113,43 +124,55 @@
             </div>
           </div>
         </div>
+        <div class="section-separator">
+          <div class="ss-content"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 310" version="1.1" class="svg replaced-svg">
+<!-- Generator: Sketch 51.1 (57501) - http://www.bohemiancoding.com/sketch -->
+<defs></defs>
+<g id="Landing-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+<g id="03_vApp-v3-Copy" transform="translate(0.000000, -554.000000)" fill="#FFFFFF">
+<path d="M-3,551 C186.257589,757.321118 319.044414,856.322454 395.360475,848.004007 C509.834566,835.526337 561.525143,796.329212 637.731734,765.961549 C713.938325,735.593886 816.980646,681.910577 1035.72208,733.065469 C1254.46351,784.220361 1511.54925,678.92359 1539.40808,662.398665 C1567.2669,645.87374 1660.9143,591.478574 1773.19378,597.641868 C1848.04677,601.75073 1901.75645,588.357675 1934.32284,557.462704 L1934.32284,863.183395 L-3,863.183395" id="Path-7"></path>
+</g>
+</g>
+</svg>
+          </div>
+        </div>
       </header>
       <div class="main">
-        <section class="about">
+        <section class="features" id="features">
           <div class="container grid-xl">
-            <div class="about__card">
-              <div class="about__title">
-                <h2>Por qué elegirnos</h2>
+            <div class="features__card"> 
+              <div class="features__title"><span>Algunas características</span>
+                <h2>Intercambios rapidos con una serie de valores agregados</h2>
               </div>
-              <div class="about__content columns">
-                <div class="column col-12">
+              <div class="features__content columns">
+                <div class="column col-4 col-md-12">
                   <div class="card">
                     <div class="card-image"><img src="img/safe-and-secure-bg.svg" alt=""></div>
                     <div class="card-body">
-                      <div class="card-title h5">
+                      <div class="card-title">
                         <h5>Compra/Venta simple</h5>
                       </div>
                       <p>Intercambie rápida y fácilmente Bitcoin, Ethereum, Ripple, Litecoin y más.</p>
                     </div>
                   </div>
                 </div>
-                <div class="column col-12">
+                <div class="column col-4 col-md-12">
                   <div class="card">
                     <div class="card-image"><img src="img/home-low-fee-bg.svg" alt=""></div>
                     <div class="card-body">
-                      <div class="card-title h5">
+                      <div class="card-title">
                         <h5>Comisiones bajas</h5>
                       </div>
                       <p>Nuestras tarifas y tasas de cambio competitivas ayudan a que sus inversiones vayan más allá.</p>
                     </div>
                   </div>
                 </div>
-                <div class="column col-12">
+                <div class="column col-4 col-md-12">
                   <div class="card">
                     <div class="card-image"><img src="img/customer-firest-bg.svg" alt=""></div>
                     <div class="card-body">
-                      <div class="card-title h5">
-                        <h5>EL CLIENTE PRIMERO</h5>
+                      <div class="card-title">
+                        <h5>El cliente primero</h5>
                       </div>
                       <p>Nos enorgullecemos de ofrecer un excelente servicio al cliente.</p>
                     </div>
@@ -159,74 +182,88 @@
             </div>
           </div>
         </section>
-        <section class="ecosystem">
-          <div class="ecosystem__content container grid-xl">
-            <div class="ecosystem__descrption">
-              <h2>¿Qué te ofrece ____ Exchange?</h2>
-              <p>Conoce cada una de las características que tiene para ofrecer a la comunidad nuestra plataforma de intercambio.</p>
-              <p>Compre, venda e intercambie Bitcoin, Ethereum, Ripple y más criptomonedas de forma segura.</p>
-            </div>
-            <div class="ecosystem__services">
-              <div class="column">
-                <div class="service service--one">
-                  <figure class="figure"><img class="img-responsive" src="img/paypal.svg" alt="">
-                    <figcaption class="figure-caption text-center">PayPal</figcaption>
-                  </figure>
-                </div>
-                <div class="service service--two">
-                  <figure class="figure"><img class="img-responsive" src="img/skrill.svg" alt="">
-                    <figcaption class="figure-caption text-center">Skrill</figcaption>
-                  </figure>
-                </div>
+        <section class="services" id="services">
+          <div class="services__content container grid-xl">
+            <div class="columns">
+              <div class="services__description column col-6 col-md-12"><span>Nuestros servicios</span>
+                <h2>Proporcionamos soluciones de intercambio en minutos no horas</h2>
+                <p>Esto debe usarse para contar una historia sobre su producto o servicio. ¿Cómo puedes beneficiarlos?</p>
               </div>
-              <div class="column">
-                <div class="service service--round"><img class="img-responsive" src="img/exch.svg" alt=""></div>
-              </div>
-              <div class="column">
-                <div class="service service--three">
-                  <figure class="figure"><img class="img-responsive" src="img/btc.svg" alt="">
-                    <figcaption class="figure-caption text-center">Bitcoin</figcaption>
-                  </figure>
+              <div class="services__items column col-6 col-md-12">
+                <div class="column">
+                  <div class="service service--one"><span class="label label-error label-state">HOT</span>
+                    <figure class="figure"><img class="img-responsive" src="img/paypal.svg" alt="">
+                      <figcaption class="figure-caption">PayPal</figcaption>
+                    </figure>
+                  </div>
+                  <div class="service service--two">
+                    <figure class="figure"><img class="img-responsive" src="img/skrill.svg" alt="">
+                      <figcaption class="figure-caption">Skrill</figcaption>
+                    </figure>
+                  </div>
                 </div>
-                <div class="service service--four">
-                  <figure class="figure"><img class="img-responsive" src="img/zelle.svg" alt="">
-                    <figcaption class="figure-caption text-center">Zelle</figcaption>
-                  </figure>
+                <div class="column">
+                  <div class="service service--round"><img class="img-responsive" src="img/exch.svg" alt=""></div>
+                </div>
+                <div class="column">
+                  <div class="service service--three">
+                    <figure class="figure"><img class="img-responsive" src="img/btc.svg" alt="">
+                      <figcaption class="figure-caption">Bitcoin</figcaption>
+                    </figure>
+                  </div>
+                  <div class="service service--four">
+                    <figure class="figure"><img class="img-responsive" src="img/zelle.svg" alt="">
+                      <figcaption class="figure-caption">Zelle</figcaption>
+                    </figure>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section class="testimonials">
-          <div class="testimonials__top">
-            <h2 class="testimonials__title">Testimonials</h2>
-          </div>
-          <div class="testimonials__bottom">
-            <div class="container grid-xl">
-              <div class="testimonials__item card">
-                <div class="card-body">
-                  <div class="columns">
-                    <div class="card__item column col-12">
-                      <div class="card-person"><img src="img/p-1.jpg" alt=""></div>
-                      <div class="card-title">
-                        <h3>Ramon Paredes</h3>
-                      </div>
-                      <p>Excelente la atención y el servicio que brindan por esta pagina . Todo muy rápido y eficaz.</p>
+        <section class="testimonials" id="testimonials">
+          <div class="testimonials__content container grid-xl"><span>Clientes Felices</span>
+            <h2 class="testimonials__title">Lo que la gente hablará de nosotros después de usar nuestros servicios</h2>
+            <div class="testimonials__items columns">
+              <div class="testimonials__item column col-3 col-md-6 col-lg-6 col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-person"><img src="img/p-1.jpg" alt=""></div>
+                    <div class="card-title">
+                      <h3>Ramon Paredes</h3>
                     </div>
-                    <div class="card__item column col-12">
-                      <div class="card-person"><img src="img/p-3.jpg" alt=""></div>
-                      <div class="card-title">
-                        <h3>Alisa Madison</h3>
-                      </div>
-                      <p>Buena atencion! Excelente trato! y muy profesional!. 100% recomendado!</p>
+                    <p>Excelente la atención y el servicio que brindan por esta pagina . Todo muy rápido y eficaz.</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__item column col-3 col-md-6 col-lg-6 col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-person"><img src="img/p-3.jpg" alt=""></div>
+                    <div class="card-title">
+                      <h3>Alisa Madison</h3>
                     </div>
-                    <div class="card__item column col-12">
-                      <div class="card-person"><img src="img/p-2.png" alt=""></div>
-                      <div class="card-title">
-                        <h3>Ivan Alicante</h3>
-                      </div>
-                      <p>Excelente servicio, muy responsables.</p>
+                    <p>Buena atencion! Excelente trato! y muy profesional!. 100% recomendado!</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonials__item column col-3 col-md-6 col-lg-6 col-sm-12">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-person"><img src="img/p-2.png" alt=""></div>
+                    <div class="card-title">
+                      <h3>Ivan Alicante</h3>
                     </div>
+                    <p>Excelente servicio, muy responsables.</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="rating"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div>
                   </div>
                 </div>
               </div>
@@ -235,65 +272,57 @@
         </section>
         <section class="cta-bottom">
           <div class="cta-bottom__content container grid-xl">
-            <h2 class="cta-bottom__title">Start your negocio</h2>
-            <p class="cta-bottom__subtitle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum cupiditate dolor voluptate ipsum.</p>
-            <button class="btn btn-lg btn-primary">Get Started</button>
+            <h2 class="cta-bottom__title">Empieza a comerciar con...</h2>
+            <p class="cta-bottom__subtitle">Debe utilizarse para contar una historia y permitir que sus usuarios sepan un poco más sobre su producto o servicio. ¿Cómo puedes beneficiarlos?</p><a class="btn btn-lg" href="#header">Call to Action</a>
           </div>
         </section>
         <footer class="footer">
-          <div class="footer__marketing container">
+          <div class="footer__marketing container grid-xl">
             <div class="columns">
-              <div class="about column col-12">
-                <h3>Nombre</h3>
-                <p>Con el respaldo de algunos de los principales inversores de criptomoneda del mundo, Alluma tiene la misión de transformar el comercio de divisas digitales en Asia emergente.</p>
+              <div class="column col-12"><img class="mr-2" src="img/exchange-gray.svg" alt="logo.png"></div>
+              <div class="footer__about column col-4 col-md-12">
+                <p>Debe utilizarse para contar una historia y permitir que sus usuarios sepan un poco más sobre su producto o servicio. ¿Cómo puedes beneficiarlos?</p>
               </div>
-              <div class="column col-12">
+              <div class="column col-2 col-md-12">
                 <h4>Acerca de</h4>
                 <ul>
                   <li> <a href="#">Sobre nosotros</a></li>
-                  <li> <a href="#">Carreras profesionales</a></li>
                   <li> <a href="#">Honorarios de comercio</a></li>
                 </ul>
               </div>
-              <div class="column col-12">
+              <div class="column col-2 col-md-12">
                 <h4>Recursos</h4>
                 <ul>
                   <li> <a href="#">Empezando</a></li>
-                  <li> <a href="#">Apoyo</a></li>
-                  <li> <a href="#">Blog</a></li>
                 </ul>
               </div>
-              <div class="column col-12">
+              <div class="column col-2 col-md-12">
                 <h4>Legal</h4>
                 <ul class="text-normal">
                   <li> <a href="#">Términos de Uso</a></li>
                   <li> <a href="#">Política de privacidad</a></li>
                 </ul>
               </div>
-              <div class="footer__contact column col-12">
-                <h4>Conectate con nosotros</h4>
-                <form action="#">
-                  <div class="input-group">
-                    <input class="form-input input-lg" type="text" placeholder="Your Email">
-                    <button class="btn btn-primary input-group-btn btn-lg">Suscribir</button>
-                  </div>
-                </form>
-                <div class="footer__icons">
-                  <ul>
-                    <li> <a href="#"><img src="img/btc.svg" alt=""></a></li>
-                    <li> <a href="#"><img src="img/btc.svg" alt=""></a></li>
-                    <li> <a href="#"><img src="img/btc.svg" alt=""></a></li>
-                  </ul>
-                </div>
+              <div class="footer__contact column col-2 col-md-12">
+                <h4>Social</h4>
+                <ul class="footer__icons">
+                  <li> <a class="si-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li> <a class="si-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li> <a class="si-instagram" href="#"><i class="fa fa-instagram"></i></a></li>
+                  <li> <a class="si-telegram" href="#"><i class="fa fa-telegram"></i></a></li>
+                </ul>
               </div>
             </div>
-          </div>
-          <div class="footer__bottom">
-            <p>Copyrights © 2018 Todos los derechos reservados por</p>
+            <div class="footer__bottom">
+              <p>Copyrights © 2018 Todos los derechos reservados por</p>
+            </div>
           </div>
         </footer>
       </div>
     </div>
+    <script src="js/vue.js"></script>
+    <script src="https://unpkg.com/smoothie-js"></script>
     <script src="js/scripts-min.js"></script>
+    <script>smoothie();</script>
   </body>
 </html>

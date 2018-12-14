@@ -1382,6 +1382,53 @@ input:disabled + .form-icon, input.disabled + .form-icon {
   display: inline-block;
 }
 
+/* line 2, node_modules/spectre.css/src/_labels.scss */
+.label {
+  border-radius: 0.1rem;
+  line-height: 1.2;
+  padding: .1rem .2rem;
+  background: #eef0f3;
+  color: #455060;
+  display: inline-block;
+}
+
+/* line 8, node_modules/spectre.css/src/_labels.scss */
+.label.label-rounded {
+  border-radius: 5rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
+}
+
+/* line 15, node_modules/spectre.css/src/_labels.scss */
+.label.label-primary {
+  background: #5755d9;
+  color: #fff;
+}
+
+/* line 19, node_modules/spectre.css/src/_labels.scss */
+.label.label-secondary {
+  background: #f1f1fc;
+  color: #5755d9;
+}
+
+/* line 23, node_modules/spectre.css/src/_labels.scss */
+.label.label-success {
+  background: #32b643;
+  color: #fff;
+}
+
+/* line 27, node_modules/spectre.css/src/_labels.scss */
+.label.label-warning {
+  background: #ffb700;
+  color: #fff;
+}
+
+/* line 31, node_modules/spectre.css/src/_labels.scss */
+.label.label-error {
+  background: #e85600;
+  color: #fff;
+}
+
 /* line 2, node_modules/spectre.css/src/_layout.scss */
 .container {
   margin-left: auto;
@@ -1393,7 +1440,7 @@ input:disabled + .form-icon, input.disabled + .form-icon {
 
 /* line 11, node_modules/spectre.css/src/_layout.scss */
 .container.grid-xl {
-  max-width: 1296px;
+  max-width: 1156px;
 }
 
 /* line 15, node_modules/spectre.css/src/_layout.scss */
@@ -1547,7 +1594,7 @@ input:disabled + .form-icon, input.disabled + .form-icon {
   margin-right: auto;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1140px) {
   /* line 135, node_modules/spectre.css/src/_layout.scss */
   .col-xl-12,
   .col-xl-11,
@@ -2037,684 +2084,6 @@ input:disabled + .form-icon, input.disabled + .form-icon {
   border-top-right-radius: 0.1rem;
 }
 
-/* line 6, node_modules/spectre.css/src/icons/_icons-core.scss */
-.icon {
-  box-sizing: border-box;
-  display: inline-block;
-  font-size: inherit;
-  font-style: normal;
-  height: 1em;
-  position: relative;
-  text-indent: -9999px;
-  vertical-align: middle;
-  width: 1em;
-}
-
-/* line 16, node_modules/spectre.css/src/icons/_icons-core.scss */
-.icon::before, .icon::after {
-  content: "";
-  display: block;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* line 27, node_modules/spectre.css/src/icons/_icons-core.scss */
-.icon.icon-2x {
-  font-size: 1.6rem;
-}
-
-/* line 31, node_modules/spectre.css/src/icons/_icons-core.scss */
-.icon.icon-3x {
-  font-size: 2.4rem;
-}
-
-/* line 35, node_modules/spectre.css/src/icons/_icons-core.scss */
-.icon.icon-4x {
-  font-size: 3.2rem;
-}
-
-/* line 45, node_modules/spectre.css/src/icons/_icons-core.scss */
-.accordion .icon,
-.btn .icon,
-.toast .icon,
-.menu .icon {
-  vertical-align: -10%;
-}
-
-/* line 51, node_modules/spectre.css/src/icons/_icons-core.scss */
-.btn-lg .icon {
-  vertical-align: -15%;
-}
-
-/* line 10, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-arrow-down::before,
-.icon-arrow-left::before,
-.icon-arrow-right::before,
-.icon-arrow-up::before,
-.icon-downward::before,
-.icon-back::before,
-.icon-forward::before,
-.icon-upward::before {
-  border: 0.1rem solid currentColor;
-  border-bottom: 0;
-  border-right: 0;
-  height: .65em;
-  width: .65em;
-}
-
-/* line 20, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-arrow-down::before {
-  transform: translate(-50%, -75%) rotate(225deg);
-}
-
-/* line 26, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-arrow-left::before {
-  transform: translate(-25%, -50%) rotate(-45deg);
-}
-
-/* line 32, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-arrow-right::before {
-  transform: translate(-75%, -50%) rotate(135deg);
-}
-
-/* line 38, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-arrow-up::before {
-  transform: translate(-50%, -25%) rotate(45deg);
-}
-
-/* line 45, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-back::after,
-.icon-forward::after {
-  background: currentColor;
-  height: 0.1rem;
-  width: .8em;
-}
-
-/* line 54, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-downward::after,
-.icon-upward::after {
-  background: currentColor;
-  height: .8em;
-  width: 0.1rem;
-}
-
-/* line 62, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-back::after {
-  left: 55%;
-}
-
-/* line 65, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-back::before {
-  transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-/* line 71, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-downward::after {
-  top: 45%;
-}
-
-/* line 74, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-downward::before {
-  transform: translate(-50%, -50%) rotate(-135deg);
-}
-
-/* line 80, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-forward::after {
-  left: 45%;
-}
-
-/* line 83, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-forward::before {
-  transform: translate(-50%, -50%) rotate(135deg);
-}
-
-/* line 89, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-upward::after {
-  top: 55%;
-}
-
-/* line 92, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-upward::before {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-/* line 99, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-caret::before {
-  border-top: .3em solid currentColor;
-  border-right: .3em solid transparent;
-  border-left: .3em solid transparent;
-  height: 0;
-  transform: translate(-50%, -25%);
-  width: 0;
-}
-
-/* line 111, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-menu::before {
-  background: currentColor;
-  box-shadow: 0 -.35em, 0 .35em;
-  height: 0.1rem;
-  width: 100%;
-}
-
-/* line 121, node_modules/spectre.css/src/icons/_icons-navigation.scss */
-.icon-apps::before {
-  background: currentColor;
-  box-shadow: -.35em -.35em, -.35em 0, -.35em .35em, 0 -.35em, 0 .35em, .35em -.35em, .35em 0, .35em .35em;
-  height: 3px;
-  width: 3px;
-}
-
-/* line 4, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-resize-horiz::before, .icon-resize-horiz::after,
-.icon-resize-vert::before,
-.icon-resize-vert::after {
-  border: 0.1rem solid currentColor;
-  border-bottom: 0;
-  border-right: 0;
-  height: .45em;
-  width: .45em;
-}
-
-/* line 12, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-resize-horiz::before,
-.icon-resize-vert::before {
-  transform: translate(-50%, -90%) rotate(45deg);
-}
-
-/* line 15, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-resize-horiz::after,
-.icon-resize-vert::after {
-  transform: translate(-50%, -10%) rotate(225deg);
-}
-
-/* line 21, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-resize-horiz::before {
-  transform: translate(-90%, -50%) rotate(-45deg);
-}
-
-/* line 24, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-resize-horiz::after {
-  transform: translate(-10%, -50%) rotate(135deg);
-}
-
-/* line 32, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-more-horiz::before,
-.icon-more-vert::before {
-  background: currentColor;
-  box-shadow: -.4em 0, .4em 0;
-  border-radius: 50%;
-  height: 3px;
-  width: 3px;
-}
-
-/* line 42, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-more-vert::before {
-  box-shadow: 0 -.4em, 0 .4em;
-}
-
-/* line 51, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-plus::before,
-.icon-minus::before,
-.icon-cross::before {
-  background: currentColor;
-  height: 0.1rem;
-  width: 100%;
-}
-
-/* line 60, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-plus::after,
-.icon-cross::after {
-  background: currentColor;
-  height: 100%;
-  width: 0.1rem;
-}
-
-/* line 68, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-cross::before {
-  width: 100%;
-}
-
-/* line 71, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-cross::after {
-  height: 100%;
-}
-
-/* line 74, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-cross::before, .icon-cross::after {
-  transform: translate(-50%, -50%) rotate(45deg);
-}
-
-/* line 82, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-check::before {
-  border: 0.1rem solid currentColor;
-  border-right: 0;
-  border-top: 0;
-  height: .5em;
-  width: .9em;
-  transform: translate(-50%, -75%) rotate(-45deg);
-}
-
-/* line 93, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-stop {
-  border: 0.1rem solid currentColor;
-  border-radius: 50%;
-}
-
-/* line 96, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-stop::before {
-  background: currentColor;
-  height: 0.1rem;
-  transform: translate(-50%, -50%) rotate(45deg);
-  width: 1em;
-}
-
-/* line 105, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-shutdown {
-  border: 0.1rem solid currentColor;
-  border-radius: 50%;
-  border-top-color: transparent;
-}
-
-/* line 109, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-shutdown::before {
-  background: currentColor;
-  content: "";
-  height: .5em;
-  top: .1em;
-  width: 0.1rem;
-}
-
-/* line 120, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-refresh::before {
-  border: 0.1rem solid currentColor;
-  border-radius: 50%;
-  border-right-color: transparent;
-  height: 1em;
-  width: 1em;
-}
-
-/* line 127, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-refresh::after {
-  border: .2em solid currentColor;
-  border-top-color: transparent;
-  border-left-color: transparent;
-  height: 0;
-  left: 80%;
-  top: 20%;
-  width: 0;
-}
-
-/* line 140, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-search::before {
-  border: 0.1rem solid currentColor;
-  border-radius: 50%;
-  height: .75em;
-  left: 5%;
-  top: 5%;
-  transform: translate(0, 0) rotate(45deg);
-  width: .75em;
-}
-
-/* line 149, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-search::after {
-  background: currentColor;
-  height: 0.1rem;
-  left: 80%;
-  top: 80%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  width: .4em;
-}
-
-/* line 161, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-edit::before {
-  border: 0.1rem solid currentColor;
-  height: .4em;
-  transform: translate(-40%, -60%) rotate(-45deg);
-  width: .85em;
-}
-
-/* line 167, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-edit::after {
-  border: .15em solid currentColor;
-  border-top-color: transparent;
-  border-right-color: transparent;
-  height: 0;
-  left: 5%;
-  top: 95%;
-  transform: translate(0, -100%);
-  width: 0;
-}
-
-/* line 181, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-delete::before {
-  border: 0.1rem solid currentColor;
-  border-bottom-left-radius: 0.1rem;
-  border-bottom-right-radius: 0.1rem;
-  border-top: 0;
-  height: .75em;
-  top: 60%;
-  width: .75em;
-}
-
-/* line 190, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-delete::after {
-  background: currentColor;
-  box-shadow: -.25em .2em, .25em .2em;
-  height: 0.1rem;
-  top: 0.05rem;
-  width: .5em;
-}
-
-/* line 200, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-share {
-  border: 0.1rem solid currentColor;
-  border-radius: 0.1rem;
-  border-right: 0;
-  border-top: 0;
-}
-
-/* line 205, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-share::before {
-  border: 0.1rem solid currentColor;
-  border-left: 0;
-  border-top: 0;
-  height: .4em;
-  left: 100%;
-  top: .25em;
-  transform: translate(-125%, -50%) rotate(-45deg);
-  width: .4em;
-}
-
-/* line 215, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-share::after {
-  border: 0.1rem solid currentColor;
-  border-bottom: 0;
-  border-right: 0;
-  border-radius: 75% 0;
-  height: .5em;
-  width: .6em;
-}
-
-/* line 227, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-flag::before {
-  background: currentColor;
-  height: 1em;
-  left: 15%;
-  width: 0.1rem;
-}
-
-/* line 233, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-flag::after {
-  border: 0.1rem solid currentColor;
-  border-bottom-right-radius: 0.1rem;
-  border-left: 0;
-  border-top-right-radius: 0.1rem;
-  height: .65em;
-  top: 35%;
-  left: 60%;
-  width: .8em;
-}
-
-/* line 247, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-bookmark::before {
-  border: 0.1rem solid currentColor;
-  border-bottom: 0;
-  border-top-left-radius: 0.1rem;
-  border-top-right-radius: 0.1rem;
-  height: .9em;
-  width: .8em;
-}
-
-/* line 255, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-bookmark::after {
-  border: 0.1rem solid currentColor;
-  border-bottom: 0;
-  border-left: 0;
-  border-radius: 0.1rem;
-  height: .5em;
-  transform: translate(-50%, 35%) rotate(-45deg) skew(15deg, 15deg);
-  width: .5em;
-}
-
-/* line 267, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-download,
-.icon-upload {
-  border-bottom: 0.1rem solid currentColor;
-}
-
-/* line 270, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-download::before,
-.icon-upload::before {
-  border: 0.1rem solid currentColor;
-  border-bottom: 0;
-  border-right: 0;
-  height: .5em;
-  width: .5em;
-  transform: translate(-50%, -60%) rotate(-135deg);
-}
-
-/* line 278, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-download::after,
-.icon-upload::after {
-  background: currentColor;
-  height: .6em;
-  top: 40%;
-  width: 0.1rem;
-}
-
-/* line 287, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-upload::before {
-  transform: translate(-50%, -60%) rotate(45deg);
-}
-
-/* line 290, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-upload::after {
-  top: 50%;
-}
-
-/* line 297, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-copy::before {
-  border: 0.1rem solid currentColor;
-  border-radius: 0.1rem;
-  border-right: 0;
-  border-bottom: 0;
-  height: .8em;
-  left: 40%;
-  top: 35%;
-  width: .8em;
-}
-
-/* line 307, node_modules/spectre.css/src/icons/_icons-action.scss */
-.icon-copy::after {
-  border: 0.1rem solid currentColor;
-  border-radius: 0.1rem;
-  height: .8em;
-  left: 60%;
-  top: 60%;
-  width: .8em;
-}
-
-/* line 2, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-time {
-  border: 0.1rem solid currentColor;
-  border-radius: 50%;
-}
-
-/* line 5, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-time::before {
-  background: currentColor;
-  height: .4em;
-  transform: translate(-50%, -75%);
-  width: 0.1rem;
-}
-
-/* line 11, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-time::after {
-  background: currentColor;
-  height: .3em;
-  transform: translate(-50%, -75%) rotate(90deg);
-  transform-origin: 50% 90%;
-  width: 0.1rem;
-}
-
-/* line 22, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-mail::before {
-  border: 0.1rem solid currentColor;
-  border-radius: 0.1rem;
-  height: .8em;
-  width: 1em;
-}
-
-/* line 28, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-mail::after {
-  border: 0.1rem solid currentColor;
-  border-right: 0;
-  border-top: 0;
-  height: .5em;
-  transform: translate(-50%, -90%) rotate(-45deg) skew(10deg, 10deg);
-  width: .5em;
-}
-
-/* line 40, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-people::before {
-  border: 0.1rem solid currentColor;
-  border-radius: 50%;
-  height: .45em;
-  top: 25%;
-  width: .45em;
-}
-
-/* line 47, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-people::after {
-  border: 0.1rem solid currentColor;
-  border-radius: 50% 50% 0 0;
-  height: .4em;
-  top: 75%;
-  width: .9em;
-}
-
-/* line 57, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-message {
-  border: 0.1rem solid currentColor;
-  border-bottom: 0;
-  border-radius: 0.1rem;
-  border-right: 0;
-}
-
-/* line 62, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-message::before {
-  border: 0.1rem solid currentColor;
-  border-bottom-right-radius: 0.1rem;
-  border-left: 0;
-  border-top: 0;
-  height: .8em;
-  left: 65%;
-  top: 40%;
-  width: .7em;
-}
-
-/* line 72, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-message::after {
-  background: currentColor;
-  border-radius: 0.1rem;
-  height: .3em;
-  left: 10%;
-  top: 100%;
-  transform: translate(0, -90%) rotate(45deg);
-  width: 0.1rem;
-}
-
-/* line 84, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-photo {
-  border: 0.1rem solid currentColor;
-  border-radius: 0.1rem;
-}
-
-/* line 87, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-photo::before {
-  border: 0.1rem solid currentColor;
-  border-radius: 50%;
-  height: .25em;
-  left: 35%;
-  top: 35%;
-  width: .25em;
-}
-
-/* line 95, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-photo::after {
-  border: 0.1rem solid currentColor;
-  border-bottom: 0;
-  border-left: 0;
-  height: .5em;
-  left: 60%;
-  transform: translate(-50%, 25%) rotate(-45deg);
-  width: .5em;
-}
-
-/* line 108, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-link::before, .icon-link::after {
-  border: 0.1rem solid currentColor;
-  border-radius: 5em 0 0 5em;
-  border-right: 0;
-  height: .5em;
-  width: .75em;
-}
-
-/* line 116, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-link::before {
-  transform: translate(-70%, -45%) rotate(-45deg);
-}
-
-/* line 119, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-link::after {
-  transform: translate(-30%, -55%) rotate(135deg);
-}
-
-/* line 126, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-location::before {
-  border: 0.1rem solid currentColor;
-  border-radius: 50% 50% 50% 0;
-  height: .8em;
-  transform: translate(-50%, -60%) rotate(-45deg);
-  width: .8em;
-}
-
-/* line 133, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-location::after {
-  border: 0.1rem solid currentColor;
-  border-radius: 50%;
-  height: .2em;
-  transform: translate(-50%, -80%);
-  width: .2em;
-}
-
-/* line 143, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-emoji {
-  border: 0.1rem solid currentColor;
-  border-radius: 50%;
-}
-
-/* line 146, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-emoji::before {
-  border-radius: 50%;
-  box-shadow: -.17em -.1em, .17em -.1em;
-  height: .15em;
-  width: .15em;
-}
-
-/* line 152, node_modules/spectre.css/src/icons/_icons-object.scss */
-.icon-emoji::after {
-  border: 0.1rem solid currentColor;
-  border-bottom-color: transparent;
-  border-radius: 50%;
-  border-right-color: transparent;
-  height: .5em;
-  transform: translate(-50%, -40%) rotate(-135deg);
-  width: .5em;
-}
-
 /* line 2, node_modules/spectre.css/src/_menus.scss */
 .menu {
   box-shadow: 0 0.05rem 0.2rem rgba(48, 55, 66, 0.3);
@@ -2857,7 +2226,25 @@ body {
   font-weight: 700;
 }
 
-/* line 6, src/scss/base/_base.scss */
+/* line 7, src/scss/base/_base.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: inherit;
+  line-height: 1.2;
+  margin-bottom: .5em;
+  margin-top: 0;
+}
+
+/* line 20, src/scss/base/_base.scss */
+p {
+  margin: 0 0 1.2rem;
+}
+
+/* line 24, src/scss/base/_base.scss */
 ul {
   margin-top: 0;
   margin-bottom: 0;
@@ -2878,500 +2265,782 @@ ul {
 
 /* line 2, src/scss/components/_header.scss */
 .header {
-  width: 100%;
-  padding-top: 0.5rem;
-  padding-bottom: 10em;
+  padding-bottom: 8em;
   position: relative;
   color: #fff;
-  background: linear-gradient(to top left, #00c6ff, #0072ff);
+  background-color: #1357e4;
+  background: linear-gradient(to top right, #397aeb, #1357e4);
 }
 
-/* line 11, src/scss/components/_header.scss */
+/* line 15, src/scss/components/_header.scss */
+.header .section-separator {
+  width: 100%;
+  position: absolute;
+  bottom: -8px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+@media (min-width: 1280px) {
+  /* line 15, src/scss/components/_header.scss */
+  .header .section-separator {
+    bottom: -16px;
+  }
+}
+
+/* line 28, src/scss/components/_header.scss */
 .header__content {
-  max-width: 1140px;
-  padding-top: 1rem;
-  margin: auto;
+  padding-top: 2rem;
 }
 
-/* line 17, src/scss/components/_header.scss */
+/* line 33, src/scss/components/_header.scss */
+.header__content .column:nth-child(2) {
+  z-index: 10;
+}
+
+@media (min-width: 841px) {
+  /* line 28, src/scss/components/_header.scss */
+  .header__content {
+    padding-top: 4.5rem;
+  }
+}
+
+/* line 40, src/scss/components/_header.scss */
 .header__title {
-  font-size: 2.55em;
-  line-height: 1.2;
-  margin-bottom: 0.5em;
+  font-size: 2.6em;
+  line-height: 1.1;
 }
 
-/* line 23, src/scss/components/_header.scss */
+/* line 46, src/scss/components/_header.scss */
 .header__subtitle {
   font-size: 1.23em;
-  line-height: 1.2;
-  font-weight: 600;
-  margin-top: 0;
+  line-height: 1.1rem;
+  font-weight: 400;
 }
 
-/* line 30, src/scss/components/_header.scss */
+/* line 53, src/scss/components/_header.scss */
+.header .note {
+  font-size: 0.6rem;
+  font-weight: normal;
+  line-height: 1.2;
+  color: #efefef;
+  margin-top: 3rem;
+}
+
+/* line 61, src/scss/components/_header.scss */
 .header__form {
-  max-width: 450px;
-  padding: 1.5em;
+  max-width: 390px;
+  padding: 1rem;
+  padding-right: 1.05rem;
   margin-top: 2em;
   margin-left: auto;
-  border-radius: 3px;
+  border-radius: 7px;
   color: #444;
   background-color: #fff;
+  box-shadow: 0 8px 31px 0 rgba(0, 8, 42, 0.4);
 }
 
 @media (max-width: 840px) {
-  /* line 30, src/scss/components/_header.scss */
+  /* line 61, src/scss/components/_header.scss */
   .header__form {
-    margin-left: auto;
     margin-right: auto;
   }
 }
 
-/* line 44, src/scss/components/_header.scss */
-.header__form h2 {
-  margin-top: 0;
+@media (min-width: 841px) {
+  /* line 61, src/scss/components/_header.scss */
+  .header__form {
+    margin-top: 0;
+  }
 }
 
-/* line 49, src/scss/components/_header.scss */
+/* line 80, src/scss/components/_header.scss */
+.header__form h2 {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+/* line 89, src/scss/components/_header.scss */
 .form-row {
   display: flex;
   justify-content: space-between;
 }
 
-/* line 53, src/scss/components/_header.scss */
+/* line 93, src/scss/components/_header.scss */
 .form-row:nth-child(4) {
-  margin-top: 1.5em;
+  margin-top: 1em;
 }
 
-/* line 56, src/scss/components/_header.scss */
+/* line 96, src/scss/components/_header.scss */
 .form .form-group {
   margin-bottom: 0;
   padding-left: 0.65em;
-  border-radius: 4px;
   border: 1px solid #dadee4;
+  border-radius: 4px;
   z-index: 100;
 }
 
-/* line 63, src/scss/components/_header.scss */
+/* line 103, src/scss/components/_header.scss */
 .form .form-group:nth-child(1) {
   width: 60%;
 }
 
-/* line 67, src/scss/components/_header.scss */
+/* line 107, src/scss/components/_header.scss */
 .form .form-group:nth-child(2) {
   width: 35%;
   position: relative;
   display: flex;
 }
 
-/* line 72, src/scss/components/_header.scss */
+/* line 112, src/scss/components/_header.scss */
 .form .form-group:nth-child(2) .form-dropdown {
   width: 100%;
   display: flex;
   align-items: flex-end;
 }
 
-/* line 79, src/scss/components/_header.scss */
+/* line 118, src/scss/components/_header.scss */
+.form .form-group:nth-child(2).dropdown-coins {
+  z-index: 5000;
+}
+
+/* line 121, src/scss/components/_header.scss */
 .form .form-group .moneda {
   display: block;
   position: absolute;
+  padding: 0.3rem 0 0;
   font-size: 0.7rem;
   line-height: 1.2rem;
-  padding: 0.3rem 0 0;
 }
 
-/* line 87, src/scss/components/_header.scss */
+/* line 129, src/scss/components/_header.scss */
 .form .form-group .dropdown {
   width: 100%;
 }
 
-/* line 90, src/scss/components/_header.scss */
+/* line 132, src/scss/components/_header.scss */
 .form .form-group .dropdown-toggle {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   color: #3b4351;
 }
 
-/* line 96, src/scss/components/_header.scss */
+/* line 138, src/scss/components/_header.scss */
 .form .form-group .dropdown-toggle span {
-  font-weight: normal;
+  font-weight: 400;
 }
 
-/* line 101, src/scss/components/_header.scss */
+/* line 141, src/scss/components/_header.scss */
+.form .form-group .dropdown .menu-item > a:focus,
+.form .form-group .dropdown .menu-item > a:hover,
+.form .form-group .dropdown .menu-item > a:active,
+.form .form-group .dropdown .menu-item > a.active {
+  color: #1357e4;
+  background: rgba(57, 122, 235, 0.15);
+}
+
+/* line 152, src/scss/components/_header.scss */
 .form-label {
   font-size: 0.7rem;
   padding-bottom: 0;
 }
 
-/* line 106, src/scss/components/_header.scss */
+/* line 157, src/scss/components/_header.scss */
 .form-input.input-sm {
-  border: 0;
-  outline: 0px;
   padding-left: 0px;
 }
 
-/* line 112, src/scss/components/_header.scss */
+/* line 159, src/scss/components/_header.scss */
 .form .btn-form {
   height: 2.5rem;
-  border: 1px solid #03c18f;
+  border: 0;
+  border-radius: 5px;
   color: #ffffff;
   background-color: #03D09A;
+  background: linear-gradient(45deg, #1943F9 0%, #3095FF 100%);
+  box-shadow: 4px 12px 35px 0 rgba(0, 8, 42, 0.4);
 }
 
-/* line 118, src/scss/components/_header.scss */
+/* line 168, src/scss/components/_header.scss */
 .form .btn-form:hover {
   background-color: #03daa1;
+  background: linear-gradient(to right, #2D54F9, #429EFF);
 }
 
-/* line 125, src/scss/components/_header.scss */
+/* line 178, src/scss/components/_header.scss */
 .timeline-icon::before {
   border: 0.1rem solid #dadee4 !important;
 }
 
-/* line 127, src/scss/components/_header.scss */
+/* line 180, src/scss/components/_header.scss */
+.timeline .timeline-item {
+  margin-bottom: 0.59rem;
+}
+
+/* line 183, src/scss/components/_header.scss */
+.timeline .timeline-item::before {
+  height: 80%;
+  top: 1.1rem;
+}
+
+/* line 189, src/scss/components/_header.scss */
 .timeline-item:nth-child(1) {
-  margin-top: -1.2rem;
+  margin-top: -1.05rem;
   z-index: 1;
 }
 
-/* line 131, src/scss/components/_header.scss */
+/* line 193, src/scss/components/_header.scss */
 .timeline-item:nth-child(1) .none::before {
   border: 0 !important;
 }
 
-/* line 132, src/scss/components/_header.scss */
+/* line 194, src/scss/components/_header.scss */
 .timeline-item:nth-child(1) .timeline-content {
   height: 35px;
 }
 
-/* line 136, src/scss/components/_header.scss */
-.timeline-content h3, .timeline-content p {
-  margin-bottom: 0px;
-  margin-top: 0px;
+/* line 203, src/scss/components/_header.scss */
+.timeline-content h3 {
+  margin-bottom: 0;
+  font-size: 0.8rem;
 }
 
-/* line 141, src/scss/components/_header.scss */
+/* line 208, src/scss/components/_header.scss */
 .timeline-content p {
+  margin-bottom: 0.85rem;
   font-weight: normal;
   font-size: 0.65rem;
   color: #bcc3ce;
 }
 
-/* line 3, src/scss/components/_navbar.scss */
+/* line 1, src/scss/components/_navbar.scss */
+.navbar {
+  padding: 1rem 0;
+  position: relative;
+}
+
+/* line 10, src/scss/components/_navbar.scss */
 .navbar__brand img {
   width: 62px;
   height: 62px;
 }
 
-/* line 8, src/scss/components/_navbar.scss */
+/* line 15, src/scss/components/_navbar.scss */
+.navbar-center {
+  flex-grow: 1 !important;
+}
+
+/* line 17, src/scss/components/_navbar.scss */
 .navbar__list {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex: 1 0 0;
 }
 
-/* line 13, src/scss/components/_navbar.scss */
-.navbar__list:not(:first-child):last-child {
-  justify-content: flex-end;
+/* line 24, src/scss/components/_navbar.scss */
+.navbar__list .btn-link {
+  color: #fff;
+  margin-right: 1rem;
 }
 
-/* line 20, src/scss/components/_navbar.scss */
+/* line 28, src/scss/components/_navbar.scss */
+.navbar__list .btn-link:nth-last-child(1) {
+  margin-right: 0;
+}
+
+/* line 30, src/scss/components/_navbar.scss */
+.navbar__list .btn-link:focus, .navbar__list .btn-link:active, .navbar__list .btn-link:visited {
+  color: #fff;
+}
+
+/* line 37, src/scss/components/_navbar.scss */
+.navbar__list .btn-link:hover {
+  color: #e9e9e9;
+}
+
+/* line 47, src/scss/components/_navbar.scss */
 .navbar__nav {
   display: none;
 }
 
-/* line 23, src/scss/components/_navbar.scss */
+/* line 50, src/scss/components/_navbar.scss */
 .navbar__nav li {
   margin-left: 0.5em;
 }
 
-/* line 28, src/scss/components/_navbar.scss */
-.navbar__toggle button {
-  width: 25px;
-  padding: 0;
-  background: 0 0;
-  border: 0;
-  outline: 0;
+/* line 53, src/scss/components/_navbar.scss */
+.navbar__toggle {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
 }
 
-/* line 35, src/scss/components/_navbar.scss */
-.navbar__toggle button span {
-  display: block;
+/* line 66, src/scss/components/_navbar.scss */
+.navbar__toggle .toggle {
+  width: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 71, src/scss/components/_navbar.scss */
+.navbar__toggle .toggle .line {
   height: 2px;
-  width: 22px;
+  width: 100%;
   margin: 0 0 7px 0;
+  display: block;
   background-color: #fff;
+  transition: all cubic-bezier(0.25, 0.1, 0.28, 1.54) 0.32s;
 }
 
-/* line 42, src/scss/components/_navbar.scss */
-.navbar__toggle button span:nth-child(2) {
+/* line 79, src/scss/components/_navbar.scss */
+.navbar__toggle .toggle .line:nth-child(2) {
   transform: translate(4px);
 }
 
-/* line 2, src/scss/components/_main.scss */
-.main {
-  background-color: #F6F8F8;
+/* line 84, src/scss/components/_navbar.scss */
+.navbar__toggle .toggle.close .line {
+  position: absolute;
+  margin: 0;
 }
 
-/* line 2, src/scss/components/_about.scss */
-.about {
+/* line 89, src/scss/components/_navbar.scss */
+.navbar__toggle .toggle.close .line-one {
+  transform: rotate(45deg);
+  top: 49%;
+}
+
+/* line 94, src/scss/components/_navbar.scss */
+.navbar__toggle .toggle.close.close .line-two {
+  transform: rotate(-45deg);
+  top: 49%;
+}
+
+/* line 103, src/scss/components/_navbar.scss */
+.navbar__menu {
   width: 100%;
-  text-align: center;
-  background-color: #F6F8F8;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #3095FF;
+  opacity: 0;
+  z-index: 10000;
 }
 
-/* line 7, src/scss/components/_about.scss */
-.about__card {
-  position: relative;
-  top: -4em;
-  border-radius: 3px;
+/* line 116, src/scss/components/_navbar.scss */
+.navbar__menu-content {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 124, src/scss/components/_navbar.scss */
+.navbar__menu-top {
+  height: 15%;
+}
+
+/* line 126, src/scss/components/_navbar.scss */
+.navbar__menu-center {
+  height: 80%;
+}
+
+/* line 129, src/scss/components/_navbar.scss */
+.navbar__menu-center .navbar__menu-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* line 136, src/scss/components/_navbar.scss */
+.navbar__menu-center .navbar__menu-list a {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+/* line 140, src/scss/components/_navbar.scss */
+.navbar__menu-center .navbar__menu-list a:hover, .navbar__menu-center .navbar__menu-list a:focus {
+  color: #e9e9e9;
+}
+
+/* line 143, src/scss/components/_navbar.scss */
+.navbar__menu-center .navbar__menu-list a:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+/* line 149, src/scss/components/_navbar.scss */
+.show {
+  top: 0;
+  right: 0;
+  opacity: 1;
+}
+
+/* line 155, src/scss/components/_navbar.scss */
+.overflow {
+  overflow: hidden;
+}
+
+/* line 156, src/scss/components/_navbar.scss */
+.z-index-10x5 {
+  z-index: 100000;
+}
+
+/* line 158, src/scss/components/_navbar.scss */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+
+/* line 161, src/scss/components/_navbar.scss */
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+/* line 3, src/scss/components/_main.scss */
+.main {
   background-color: #fff;
-  box-shadow: 0px 1px 1px 1px #e8e8e8;
 }
 
-/* line 15, src/scss/components/_about.scss */
-.about__title {
+/* line 2, src/scss/components/_features.scss */
+.features {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+/* line 8, src/scss/components/_features.scss */
+.features__content {
+  padding: 2rem 0;
+  justify-content: center;
+}
+
+/* line 26, src/scss/components/_features.scss */
+.features__title {
   padding-top: 0.5rem;
   padding-bottom: 2rem;
 }
 
-/* line 20, src/scss/components/_about.scss */
-.about .card {
+/* line 30, src/scss/components/_features.scss */
+.features__title h2 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* line 35, src/scss/components/_features.scss */
+.features__title span {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #999;
+}
+
+/* line 42, src/scss/components/_features.scss */
+.features .card {
   border: 0;
   padding: 1rem 0.5rem 0 0.5rem;
+  box-shadow: 0 0 50px 15px rgba(34, 34, 34, 0.05);
 }
 
-/* line 25, src/scss/components/_about.scss */
-.about .card-body p {
+/* line 47, src/scss/components/_features.scss */
+.features .card-body h5 {
+  font-size: 1rem;
+}
+
+/* line 51, src/scss/components/_features.scss */
+.features .card-body p {
+  font-size: 0.82rem;
   font-weight: 400;
+  color: #999;
 }
 
-/* line 4, src/scss/components/_ecosystem.scss */
-.ecosystem {
-  padding: 1rem 0 2.5rem;
+/* line 57, src/scss/components/_features.scss */
+.features .card-image {
+  display: flex;
+  justify-content: center;
 }
 
-/* line 7, src/scss/components/_ecosystem.scss */
-.ecosystem__content {
-  width: 90%;
+/* line 4, src/scss/components/_services.scss */
+.services {
+  background-color: #f5fbff;
 }
 
-/* line 9, src/scss/components/_ecosystem.scss */
-.ecosystem__descrption p {
+/* line 8, src/scss/components/_services.scss */
+.services__content {
+  padding-top: 6.5rem;
+  padding-bottom: 6.5rem;
+}
+
+/* line 16, src/scss/components/_services.scss */
+.services__description h2 {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* line 21, src/scss/components/_services.scss */
+.services__description p {
+  font-size: 0.82rem;
   font-weight: 400;
+  color: #999;
 }
 
-/* line 11, src/scss/components/_ecosystem.scss */
-.ecosystem__services {
+/* line 27, src/scss/components/_services.scss */
+.services__description span {
+  font-weight: 400;
+  font-size: 1rem;
+  color: #999;
+}
+
+/* line 34, src/scss/components/_services.scss */
+.services__items {
   padding-top: 2.5rem;
 }
 
-/* line 14, src/scss/components/_ecosystem.scss */
-.ecosystem__services .column {
+@media (min-width: 841px) {
+  /* line 34, src/scss/components/_services.scss */
+  .services__items {
+    padding-top: 0;
+  }
+}
+
+/* line 41, src/scss/components/_services.scss */
+.services__items .column {
   position: relative;
   display: flex;
   justify-content: center;
 }
 
-/* line 21, src/scss/components/_ecosystem.scss */
-.ecosystem .service {
-  width: 100px;
-  height: 100px;
+/* line 48, src/scss/components/_services.scss */
+.services .service {
+  width: 120px;
+  height: 120px;
   margin: 0.5rem;
   position: relative;
   border-radius: 3px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #EBEBEB;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 50px 15px rgba(34, 34, 34, 0.05);
 }
 
-/* line 32, src/scss/components/_ecosystem.scss */
-.ecosystem .service img, .ecosystem .service--round {
+/* line 60, src/scss/components/_services.scss */
+.services .service .label-state {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  padding: 0 6px;
+  height: 16px;
+  line-height: 16px;
+  font-size: 9px;
+  text-transform: uppercase;
+  background-color: #f44;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+/* line 74, src/scss/components/_services.scss */
+.services .service img, .services .service--round {
   width: 50px;
   height: 50px;
 }
 
-/* line 38, src/scss/components/_ecosystem.scss */
-.ecosystem .service .figure {
+/* line 80, src/scss/components/_services.scss */
+.services .service .figure {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
-/* line 45, src/scss/components/_ecosystem.scss */
-.ecosystem .service figcaption {
+/* line 87, src/scss/components/_services.scss */
+.services .service figcaption {
   font-weight: 400;
   text-align: center;
   color: #bcc3ce;
 }
 
-/* line 51, src/scss/components/_ecosystem.scss */
-.ecosystem .service--one, .ecosystem .service--two {
+/* line 93, src/scss/components/_services.scss */
+.services .service--one, .services .service--two {
   left: 40px;
 }
 
-/* line 55, src/scss/components/_ecosystem.scss */
-.ecosystem .service--two {
+/* line 98, src/scss/components/_services.scss */
+.services .service--two {
   top: 50px;
 }
 
-/* line 58, src/scss/components/_ecosystem.scss */
-.ecosystem .service--three {
+/* line 100, src/scss/components/_services.scss */
+.services .service--three {
   right: 40px;
   bottom: 40px;
 }
 
-/* line 62, src/scss/components/_ecosystem.scss */
-.ecosystem .service--four {
+/* line 105, src/scss/components/_services.scss */
+.services .service--four {
   right: 30px;
 }
 
-/* line 66, src/scss/components/_ecosystem.scss */
-.ecosystem .service--round {
+/* line 107, src/scss/components/_services.scss */
+.services .service--round {
   border-radius: 50%;
-  background-color: transparent;
+  background-color: rgba(34, 34, 34, 0.05);
 }
 
 /* line 2, src/scss/components/_testimonials.scss */
 .testimonials {
-  padding-top: 2.5rem;
-  padding-bottom: 1rem;
-  background-color: #F2F5F8;
+  background-image: linear-gradient(45deg, #44bfff 0%, #4777f4 100%);
 }
 
-/* line 7, src/scss/components/_testimonials.scss */
-.testimonials__top {
-  width: 100%;
-  height: 8rem;
-  border-radius: 3px;
+/* line 10, src/scss/components/_testimonials.scss */
+.testimonials__content {
+  height: 100%;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
   text-align: center;
-  color: #fff;
-  background: linear-gradient(to top left, #40E197, #24ACAE);
 }
 
-/* line 15, src/scss/components/_testimonials.scss */
-.testimonials__top h2 {
-  padding-top: 1rem;
-}
-
-/* line 18, src/scss/components/_testimonials.scss */
-.testimonials__bottom {
-  margin: 0 auto;
-  position: relative;
-  top: -4em;
-}
-
-/* line 25, src/scss/components/_testimonials.scss */
-.testimonials .card {
-  border-radius: 3px;
-  border: 0;
-  padding: 1rem 0.5rem 0 0.5rem;
-  text-align: center;
-  background-color: #fff;
-  box-shadow: 0px 1px 1px 1px #e8e8e8;
-}
-
-/* line 33, src/scss/components/_testimonials.scss */
-.testimonials .card-title h3 {
-  margin-bottom: 0;
-}
-
-/* line 36, src/scss/components/_testimonials.scss */
-.testimonials .card-body .columns {
-  flex-wrap: nowrap;
-  overflow: hidden;
-}
-
-/* line 41, src/scss/components/_testimonials.scss */
-.testimonials .card-body .card__item {
-  position: relative;
-  -webkit-animation: fade-animation-1 25s ease-in-out infinite;
-  animation: fade-animation-1 25s ease-in-out infinite;
-}
-
-/* line 47, src/scss/components/_testimonials.scss */
-.testimonials .card-body p {
+/* line 17, src/scss/components/_testimonials.scss */
+.testimonials__content span {
   font-weight: 400;
+  font-size: 1rem;
+  color: #FFFFFF;
+}
+
+/* line 23, src/scss/components/_testimonials.scss */
+.testimonials__content .testimonials__title {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3.5rem;
+  color: #FFFFFF;
+}
+
+/* line 31, src/scss/components/_testimonials.scss */
+.testimonials__items {
+  justify-content: flex-start;
+}
+
+@media (min-width: 960px) {
+  /* line 31, src/scss/components/_testimonials.scss */
+  .testimonials__items {
+    justify-content: center;
+  }
+}
+
+/* line 39, src/scss/components/_testimonials.scss */
+.testimonials__item {
+  margin-bottom: 1rem;
+}
+
+/* line 43, src/scss/components/_testimonials.scss */
+.testimonials .card {
+  height: 100%;
+  padding: 1rem 0.35rem;
+  text-align: center;
+  border-radius: 10px;
+  background-color: #fff;
 }
 
 /* line 50, src/scss/components/_testimonials.scss */
+.testimonials .card-title h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+/* line 57, src/scss/components/_testimonials.scss */
+.testimonials .card-body p {
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: #999;
+}
+
+/* line 65, src/scss/components/_testimonials.scss */
+.testimonials .card-person {
+  padding-bottom: 1rem;
+}
+
+/* line 68, src/scss/components/_testimonials.scss */
 .testimonials .card-person img {
-  width: 70px;
-  height: 70px;
+  width: 80px;
+  height: 80px;
   border-radius: 50%;
 }
 
-@keyframes fade-animation-1 {
-  0%, 30% {
-    left: 0;
-  }
-  33%, 63% {
-    left: -100%;
-  }
-  66%, 90% {
-    left: -200%;
-  }
-  94%, 100% {
-    left: 0;
-  }
+/* line 75, src/scss/components/_testimonials.scss */
+.testimonials .card-footer {
+  padding-top: 0;
 }
 
-@-webkit-keyframes fade-animation-1 {
-  0%, 30% {
-    left: 0;
-  }
-  33%, 63% {
-    left: -100%;
-  }
-  66%, 90% {
-    left: -200%;
-  }
-  94%, 100% {
-    left: 0;
-  }
+/* line 80, src/scss/components/_testimonials.scss */
+.rating {
+  position: relative;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  color: #ffb24c;
 }
 
-/* line 2, src/scss/components/_cta-bottom.scss */
+/* line 89, src/scss/components/_testimonials.scss */
+.rating i {
+  margin-left: 2px;
+}
+
+/* line 2, src/scss/components/_cta-section.scss */
 .cta-bottom {
   width: 100%;
+  height: 415px;
   padding: 2.2rem 0;
-  color: #FFF;
-  background-color: #00c6ff;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3b4351;
+  background: #f5fbff;
   background-repeat: repeat;
-  background-image: linear-gradient(to right, #00c6ff40 0%, #0072ffa6 100%), url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 304 304' width='304' height='304'%3E%3Cpath fill='%23f2f5f8' fill-opacity='0.24' d='M44.1 224a5 5 0 1 1 0 2H0v-2h44.1zm160 48a5 5 0 1 1 0 2H82v-2h122.1zm57.8-46a5 5 0 1 1 0-2H304v2h-42.1zm0 16a5 5 0 1 1 0-2H304v2h-42.1zm6.2-114a5 5 0 1 1 0 2h-86.2a5 5 0 1 1 0-2h86.2zm-256-48a5 5 0 1 1 0 2H0v-2h12.1zm185.8 34a5 5 0 1 1 0-2h86.2a5 5 0 1 1 0 2h-86.2zM258 12.1a5 5 0 1 1-2 0V0h2v12.1zm-64 208a5 5 0 1 1-2 0v-54.2a5 5 0 1 1 2 0v54.2zm48-198.2V80h62v2h-64V21.9a5 5 0 1 1 2 0zm16 16V64h46v2h-48V37.9a5 5 0 1 1 2 0zm-128 96V208h16v12.1a5 5 0 1 1-2 0V210h-16v-76.1a5 5 0 1 1 2 0zm-5.9-21.9a5 5 0 1 1 0 2H114v48H85.9a5 5 0 1 1 0-2H112v-48h12.1zm-6.2 130a5 5 0 1 1 0-2H176v-74.1a5 5 0 1 1 2 0V242h-60.1zm-16-64a5 5 0 1 1 0-2H114v48h10.1a5 5 0 1 1 0 2H112v-48h-10.1zM66 284.1a5 5 0 1 1-2 0V274H50v30h-2v-32h18v12.1zM236.1 176a5 5 0 1 1 0 2H226v94h48v32h-2v-30h-48v-98h12.1zm25.8-30a5 5 0 1 1 0-2H274v44.1a5 5 0 1 1-2 0V146h-10.1zm-64 96a5 5 0 1 1 0-2H208v-80h16v-14h-42.1a5 5 0 1 1 0-2H226v18h-16v80h-12.1zm86.2-210a5 5 0 1 1 0 2H272V0h2v32h10.1zM98 101.9V146H53.9a5 5 0 1 1 0-2H96v-42.1a5 5 0 1 1 2 0zM53.9 34a5 5 0 1 1 0-2H80V0h2v34H53.9zm60.1 3.9V66H82v64H69.9a5 5 0 1 1 0-2H80V64h32V37.9a5 5 0 1 1 2 0zM101.9 82a5 5 0 1 1 0-2H128V37.9a5 5 0 1 1 2 0V82h-28.1zm16-64a5 5 0 1 1 0-2H146v44.1a5 5 0 1 1-2 0V18h-26.1zm102.2 270a5 5 0 1 1 0 2H98v14h-2v-16h124.1zM242 149.9V160h16v34h-16v62h48v48h-2v-46h-48v-66h16v-30h-16v-12.1a5 5 0 1 1 2 0zM53.9 18a5 5 0 1 1 0-2H64V2H48V0h18v18H53.9zm112 32a5 5 0 1 1 0-2H192V0h50v2h-48v48h-28.1zm-48-48a5 5 0 0 1-9.8-2h2.07a3 3 0 1 0 5.66 0H178v34h-18V21.9a5 5 0 1 1 2 0V32h14V2h-58.1zm0 96a5 5 0 1 1 0-2H137l32-32h39V21.9a5 5 0 1 1 2 0V66h-40.17l-32 32H117.9zm28.1 90.1a5 5 0 1 1-2 0v-76.51L175.59 80H224V21.9a5 5 0 1 1 2 0V82h-49.59L146 112.41v75.69zm16 32a5 5 0 1 1-2 0v-99.51L184.59 96H300.1a5 5 0 0 1 3.9-3.9v2.07a3 3 0 0 0 0 5.66v2.07a5 5 0 0 1-3.9-3.9H185.41L162 121.41v98.69zm-144-64a5 5 0 1 1-2 0v-3.51l48-48V48h32V0h2v50H66v55.41l-48 48v2.69zM50 53.9v43.51l-48 48V208h26.1a5 5 0 1 1 0 2H0v-65.41l48-48V53.9a5 5 0 1 1 2 0zm-16 16V89.41l-34 34v-2.82l32-32V69.9a5 5 0 1 1 2 0zM12.1 32a5 5 0 1 1 0 2H9.41L0 43.41V40.6L8.59 32h3.51zm265.8 18a5 5 0 1 1 0-2h18.69l7.41-7.41v2.82L297.41 50H277.9zm-16 160a5 5 0 1 1 0-2H288v-71.41l16-16v2.82l-14 14V210h-28.1zm-208 32a5 5 0 1 1 0-2H64v-22.59L40.59 194H21.9a5 5 0 1 1 0-2H41.41L66 216.59V242H53.9zm150.2 14a5 5 0 1 1 0 2H96v-56.6L56.6 162H37.9a5 5 0 1 1 0-2h19.5L98 200.6V256h106.1zm-150.2 2a5 5 0 1 1 0-2H80v-46.59L48.59 178H21.9a5 5 0 1 1 0-2H49.41L82 208.59V258H53.9zM34 39.8v1.61L9.41 66H0v-2h8.59L32 40.59V0h2v39.8zM2 300.1a5 5 0 0 1 3.9 3.9H3.83A3 3 0 0 0 0 302.17V256h18v48h-2v-46H2v42.1zM34 241v63h-2v-62H0v-2h34v1zM17 18H0v-2h16V0h2v18h-1zm273-2h14v2h-16V0h2v16zm-32 273v15h-2v-14h-14v14h-2v-16h18v1zM0 92.1A5.02 5.02 0 0 1 6 97a5 5 0 0 1-6 4.9v-2.07a3 3 0 1 0 0-5.66V92.1zM80 272h2v32h-2v-32zm37.9 32h-2.07a3 3 0 0 0-5.66 0h-2.07a5 5 0 0 1 9.8 0zM5.9 0A5.02 5.02 0 0 1 0 5.9V3.83A3 3 0 0 0 3.83 0H5.9zm294.2 0h2.07A3 3 0 0 0 304 3.83V5.9a5 5 0 0 1-3.9-5.9zm3.9 300.1v2.07a3 3 0 0 0-1.83 1.83h-2.07a5 5 0 0 1 3.9-3.9zM97 100a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-48 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 96a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-144a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm96 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM49 36a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-32 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM33 68a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 240a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm80-176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 48a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm112 176a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-16 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 180a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 16a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0-32a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM17 84a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm32 64a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm16-16a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'%3E%3C/path%3E%3C/svg%3E");
+  background-image: url(../img/trade-now-bg.png);
+  background-size: 1166px 234px;
+  background-repeat: no-repeat;
+  background-position: 60% 90px;
 }
 
-/* line 15, src/scss/components/_cta-bottom.scss */
-.cta-bottom__content {
-  width: 90%;
-}
-
-/* line 18, src/scss/components/_cta-bottom.scss */
+/* line 20, src/scss/components/_cta-section.scss */
 .cta-bottom__content .btn {
-  background: #f6f8f8;
-  border-color: #f6f8f8;
-  color: #00bcff;
+  width: 234.2px;
+  height: 54px;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 38px;
+  border-radius: 4px;
+  border-color: #009fff;
+  color: #ffffff;
+  background: #009fff;
+  box-shadow: rgba(0, 159, 255, 0.27) 0px 16px 25px 0px;
 }
 
-/* line 24, src/scss/components/_cta-bottom.scss */
+/* line 33, src/scss/components/_cta-section.scss */
 .cta-bottom__content .btn:hover {
+  color: #fff;
   background: #0096ff;
   border-color: #038ff1;
-  color: #fff;
 }
 
-/* line 32, src/scss/components/_cta-bottom.scss */
+/* line 41, src/scss/components/_cta-section.scss */
 .cta-bottom__title {
-  margin-top: 0;
+  font-size: 2.3rem;
 }
 
-/* line 36, src/scss/components/_cta-bottom.scss */
+/* line 47, src/scss/components/_cta-section.scss */
 .cta-bottom__subtitle {
-  margin-bottom: 2rem;
+  font-weight: normal;
+  font-size: 0.85rem;
+  color: #999;
 }
 
 /* line 2, src/scss/components/_footer.scss */
@@ -3379,72 +3048,114 @@ ul {
   padding: 2.2rem 0 0.5rem;
 }
 
-/* line 5, src/scss/components/_footer.scss */
-.footer__marketing {
-  width: 90%;
-}
-
-/* line 7, src/scss/components/_footer.scss */
-.footer h4 {
-  font-size: 18px;
-  margin-bottom: 0.7em;
-}
-
-/* line 12, src/scss/components/_footer.scss */
-.footer li {
-  font-weight: 400;
-  font-size: 14px;
+@media (min-width: 841px) {
+  /* line 10, src/scss/components/_footer.scss */
+  .footer .columns {
+    padding-top: 1rem;
+    padding-bottom: 4rem;
+  }
 }
 
 /* line 16, src/scss/components/_footer.scss */
+.footer .columns .column {
+  margin-bottom: 1rem;
+}
+
+/* line 19, src/scss/components/_footer.scss */
+.footer h4 {
+  font-size: 1rem;
+}
+
+/* line 25, src/scss/components/_footer.scss */
+.footer li {
+  font-weight: 400;
+}
+
+/* line 28, src/scss/components/_footer.scss */
 .footer li a {
   color: #bcc3ce;
 }
 
-/* line 19, src/scss/components/_footer.scss */
-.footer .about {
+/* line 31, src/scss/components/_footer.scss */
+.footer__about {
   text-align: left;
 }
 
-/* line 22, src/scss/components/_footer.scss */
-.footer .about h3 {
-  font-size: 1.4rem;
+/* line 34, src/scss/components/_footer.scss */
+.footer__about h3 {
   margin-bottom: 0;
 }
 
-/* line 27, src/scss/components/_footer.scss */
-.footer .about p {
+/* line 36, src/scss/components/_footer.scss */
+.footer__about p {
   font-weight: 500;
-  margin-top: 0.5em;
 }
 
-/* line 33, src/scss/components/_footer.scss */
+/* line 42, src/scss/components/_footer.scss */
+.footer__contact form {
+  max-width: 400px;
+}
+
+/* line 45, src/scss/components/_footer.scss */
+.footer__contact form .btn {
+  border: 0;
+  background: linear-gradient(to left, #2D54F9, #429EFF);
+}
+
+/* line 51, src/scss/components/_footer.scss */
 .footer__icons {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
-}
-
-/* line 37, src/scss/components/_footer.scss */
-.footer__icons ul {
   width: 100%;
+  padding-bottom: 1.5rem;
   display: flex;
 }
 
-/* line 41, src/scss/components/_footer.scss */
-.footer__icons ul li {
-  margin-right: 6px;
+/* line 56, src/scss/components/_footer.scss */
+.footer__icons li {
+  padding: 5px;
+  font-size: 1rem;
 }
 
-/* line 46, src/scss/components/_footer.scss */
-.footer__icons img {
-  width: 30px;
-  height: 30px;
+/* line 60, src/scss/components/_footer.scss */
+.footer__icons li:first-child {
+  padding-left: 0;
 }
 
-/* line 52, src/scss/components/_footer.scss */
+/* line 65, src/scss/components/_footer.scss */
+.footer__icons a {
+  width: 36px;
+  height: 36px;
+}
+
+/* line 70, src/scss/components/_footer.scss */
+.footer__icons i {
+  width: 29px;
+  height: 29px;
+}
+
+/* line 78, src/scss/components/_footer.scss */
+.footer__icons .si-facebook:hover {
+  color: #4167b1;
+}
+
+/* line 82, src/scss/components/_footer.scss */
+.footer__icons .si-twitter:hover {
+  color: #55acee;
+}
+
+/* line 86, src/scss/components/_footer.scss */
+.footer__icons .si-instagram:hover {
+  color: #d9317a;
+}
+
+/* line 90, src/scss/components/_footer.scss */
+.footer__icons .si-telegram:hover {
+  color: #2bacde;
+}
+
+/* line 95, src/scss/components/_footer.scss */
 .footer__bottom {
-  font-weight: 400;
   text-align: center;
+  font-weight: 400;
   color: #bcc3ce;
 }
 
@@ -3454,6 +3165,11 @@ ul {
   height: 3rem;
   border-radius: 50%;
   background-color: #e43535;
+}
+
+/* line 9, src/scss/components/_utilities.scss */
+.opacity-90 {
+  opacity: .9;
 }
 
 /* line 3, src/scss/hacks/_hacks.scss */
