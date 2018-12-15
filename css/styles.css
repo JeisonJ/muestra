@@ -2580,9 +2580,16 @@ ul {
   cursor: pointer;
 }
 
+@media (min-width: 601px) {
+  /* line 53, src/scss/components/_navbar.scss */
+  .navbar__toggle {
+    display: none;
+  }
+}
+
 /* line 66, src/scss/components/_navbar.scss */
 .navbar__toggle .toggle {
-  width: 30px;
+  width: 25px;
   position: relative;
   cursor: pointer;
 }

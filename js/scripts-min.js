@@ -155,7 +155,11 @@ var app = new Vue({
     currencyToChange: '',
     receiveAmount: 0,
     currencyToReceive: '',
-    toggleMenu: false
+    toggleMenu: false,
+    elBody: null
+  },
+  mounted: function mounted() {
+    this.elBody = document.body;
   },
   methods: {
     setCurrencyToChange: function setCurrencyToChange(currency) {
@@ -166,6 +170,7 @@ var app = new Vue({
     },
     showToggleMenu: function showToggleMenu() {
       this.toggleMenu = !this.toggleMenu;
+      this.elBody.classList.toggle('overflow');
       console.log(this.toggleMenu);
     }
   }
